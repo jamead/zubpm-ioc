@@ -1,0 +1,296 @@
+#############################
+### ADC DMA Waveform 1M samples
+#############################
+record(stringin, "$(P){BPM:$(NO)}ADC:A:Buff-Wfm:T") {
+  field(DTYP, "Soft Timestamp")
+  field(TSEL, "$(P){BPM:$(NO)}ADC:A:Buff-Wfm.TIME CP")
+  field(INP, "@%Y%H%M%S")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:A:Buff-Wfm") {
+    field(DESC, "117 MHz ADC0 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 53 0 8")
+    field(SCAN, "I/O Intr")
+    field(FTVL, "DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ADC_LEN)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:B:Buff-Wfm") {
+    field(DESC, "117 MHz ADC1 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 53 2 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ADC_LEN)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:C:Buff-Wfm") {
+    field(DESC, "117 MHz ADC2 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 53 4 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ADC_LEN)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:D:Buff-Wfm") {
+    field(DESC, "117 MHz ADC3 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 53 6 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ADC_LEN)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+}
+
+record(longin, "$(P){BPM:$(NO)}DMA:ADCLen-I") {
+    field(DESC, "TBT Samples Per Trigger")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Rx$(NO) 30 72")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "Samples")
+}
+
+record(bi, "$(P){BPM:$(NO)}DMA:ADCbusy-I") {
+    field(DESC, "DMA TBT Active")
+    field(DTYP, "PSC Reg")
+    field(INP , "@Rx$(NO) 30 84")
+    field(MASK, "0x1")
+    field(SCAN,"I/O Intr")
+    field(ZNAM,"Rdy")
+    field(ONAM,"Busy")
+}
+
+record(longout, "$(P){BPM:$(NO)}DMA:ADCLen-SP") {
+    field(DESC, "Number of TBT samples per trigger")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@aie_tx_$(NO) 1 56")
+    field(HOPR,"100000")
+    field(LOPR,"100")
+    field(PINI, "YES")
+    field(VAL, "100")
+    field(EGU, "Samples")
+    info(autosaveFields, "VAL")
+#    field(FLNK, "$(P){BPM:$(NO)}GoRegSingleWrite")
+}
+
+record(longout, "$(P){BPM:$(NO)}ADC:AlignDelay-SP") {
+    field(DESC, "Clock Alignment Delay Transfers")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@aie_tx_$(NO) 1 12")
+    field(HOPR,"400")
+    field(LOPR,"200")
+    field(PINI, "YES")
+    field(VAL, "200")
+    field(EGU, "dT")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){BPM:$(NO)}GoRegSingleWrite")
+}
+
+record(longout, "$(P){BPM:$(NO)}ADC:SpiTransfer-SP") {
+# 16 Bit Format:  Bits 7-0 = Data, Bits = 15-8 SPI Address in LTC2195 (ADC) 
+    field(DESC, "Write Command to ADC SPI Bus")
+    field(DTYP, "PSC Single I32")
+    field(OUT , "@aie_tx_$(NO) 1 24")
+    field(PINI, "YES")
+    field(VAL, "0")
+    info(autosaveFields, "VAL")
+    field(FLNK, "$(P){BPM:$(NO)}GoRegSingleWrite")
+}
+
+############################################################
+#
+#  PVs derived from the above values:
+#
+############################################################
+
+record(waveform,"$(P){BPM:$(NO)}ADC:A-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"20000")
+  field(FTVL,"SHORT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:B-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"20000")
+  field(FTVL,"SHORT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:C-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"20000")
+  field(FTVL,"SHORT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:D-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Channel Raw ADC Data")
+  field(NELM,"20000")
+  field(FTVL,"SHORT")
+#  field(FLNK,"$(P){BPM:$(NO)}ADC-Sub")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:Time-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Relative Acquisition Time")
+  field(NELM,"20000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:FFT-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Channel FFT")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:IPSD-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Integrated PSD")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}ADC:Freq-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Frequency Array")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(longout,"$(P){BPM:$(NO)}ADC:WfmLen-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+#  field(FLNK,"$(P){BPM:$(NO)}ADC-Sub")
+}
+
+record(longout,"$(P){BPM:$(NO)}ADC:WfmOff-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+#  field(FLNK,"$(P){BPM:$(NO)}ADC-Sub")
+}
+
+record(longout,"$(P){BPM:$(NO)}ADC:UpdateFFT-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(mbbo,"$(P){BPM:$(NO)}ADC:FFT:Chan-SP"){
+  field(PINI,"YES")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+  field(TWVL,"2")
+  field(THVL,"3")
+  field(ZRST,"A")
+  field(ONST,"B")
+  field(TWST,"C")
+  field(THST,"D")
+}
+
+record(mbbo,"$(P){BPM:$(NO)}ADC:FFT:Unit-SP"){
+  field(PINI,"YES")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+  field(TWVL,"2")
+  field(ZRST,"Cnts")
+  field(ONST,"dBfs")
+  field(TWST,"dBc")
+}
+
+record(ai,"$(P){BPM:$(NO)}ADC:PeakFreq-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P){BPM:$(NO)}ADC:PeakAmpl-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P){BPM:$(NO)}ADC:FFT:0Hz-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Value at 0Hz")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P){BPM:$(NO)}ADC:SpiData-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P){BPM:$(NO)}ADC:SpiAddr-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P){BPM:$(NO)}ADC:SpiLoad-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(aSub,"$(P){BPM:$(NO)}ADC-Sub"){
+    field(SNAM,"ADCsub")
+    field(SCAN,".1 second")
+
+    field(FTA,  "DOUBLE")
+    field(NOA,  "10000")
+    field(INPA, "$(P){BPM:$(NO)}ADC:A:Buff-Wfm")
+    field(FTB,  "DOUBLE")
+    field(NOB,  "10000")
+    field(INPB, "$(P){BPM:$(NO)}ADC:B:Buff-Wfm")
+    field(FTC,  "DOUBLE")
+    field(NOC,  "10000")
+    field(INPC, "$(P){BPM:$(NO)}ADC:C:Buff-Wfm")
+    field(FTD,  "DOUBLE")
+    field(NOD,  "10000")
+    field(INPD, "$(P){BPM:$(NO)}ADC:D:Buff-Wfm")
+    field(FTE,  "LONG")
+    field(NOE,  "1")
+    field(INPE, "$(P){BPM:$(NO)}ADC:WfmLen-SP")
+    field(FTF,  "LONG")
+    field(NOF,  "1")
+    field(INPF, "$(P){BPM:$(NO)}ADC:WfmOff-SP")
+    field(FTG,  "LONG")
+    field(NOG,  "1")
+    field(INPG, "$(P){BPM:$(NO)}DMA:ADCLen-SP")
+    field(FTH,  "LONG")
+    field(NOH,  "1")
+    field(INPH, "$(P){BPM:$(NO)}DMA:Busy-I.RVAL")
+
+    field(FTVA,  "LONG")
+    field(NOVA,  "1")
+    field(OUTA, "$(P){BPM:$(NO)}ADC:WfmLen-SP PP")
+    field(FTVB,  "LONG")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){BPM:$(NO)}ADC:WfmOff-SP PP")
+
+}

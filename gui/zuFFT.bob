@@ -1,0 +1,1709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-12-08 10:47:21 by caracapp-->
+<display version="2.0.0">
+  <name>zuFFT</name>
+  <height>865</height>
+  <widget type="array" version="2.0.0">
+    <name>Array</name>
+    <pv_name>$(P){BPM:$(NO)}FFT:Peak:Freq-Wfm</pv_name>
+    <x>800</x>
+    <y>100</y>
+    <width>80</width>
+    <height>770</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_31</name>
+      <width>60</width>
+      <height>25</height>
+    </widget>
+  </widget>
+  <widget type="array" version="2.0.0">
+    <name>Array_1</name>
+    <pv_name>$(P){BPM:$(NO)}FFT:Peak:Ampl-Wfm</pv_name>
+    <x>875</x>
+    <y>100</y>
+    <width>80</width>
+    <height>770</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_32</name>
+      <width>60</width>
+      <height>25</height>
+    </widget>
+  </widget>
+  <widget type="array" version="2.0.0">
+    <name>Array_2</name>
+    <pv_name>$(P){BPM:$(NO)}FFT:Peak:FWHM-Wfm</pv_name>
+    <x>950</x>
+    <y>100</y>
+    <width>80</width>
+    <height>770</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_33</name>
+      <width>60</width>
+      <height>25</height>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_90</name>
+    <text>Unit</text>
+    <x>806</x>
+    <y>80</y>
+    <width>68</width>
+    <height>25</height>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="New Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>MHz</value>
+        </exp>
+        <exp bool_exp="pv0==1 or pv0==2">
+          <value>KHz</value>
+        </exp>
+        <exp bool_exp="pv0==3">
+          <value>Hz</value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_95</name>
+    <text>Freq</text>
+    <x>806</x>
+    <y>52</y>
+    <width>68</width>
+    <height>25</height>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_96</name>
+    <text>Ampl</text>
+    <x>881</x>
+    <y>52</y>
+    <width>68</width>
+    <height>25</height>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_97</name>
+    <text>FWHM</text>
+    <x>956</x>
+    <y>52</y>
+    <width>68</width>
+    <height>25</height>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_101</name>
+    <text>Unit</text>
+    <x>956</x>
+    <y>80</y>
+    <width>68</width>
+    <height>25</height>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="New Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>KHz</value>
+        </exp>
+        <exp bool_exp="pv0==1 or pv0==2">
+          <value>Hz</value>
+        </exp>
+        <exp bool_exp="pv0==3">
+          <value>mHz</value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_102</name>
+    <text>Unit</text>
+    <x>881</x>
+    <y>80</y>
+    <width>68</width>
+    <height>25</height>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="New Rule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>ADC Cnts</value>
+        </exp>
+        <exp bool_exp="pv0==1 and pv1&lt;4">
+          <value>FS=1e6</value>
+        </exp>
+        <exp bool_exp="pv0==1 and pv1&gt;3">
+          <value>microns</value>
+        </exp>
+        <exp bool_exp="pv0==2 and pv1&lt;4">
+          <value>FS=1e6</value>
+        </exp>
+        <exp bool_exp="pv0==2 and pv1&gt;3">
+          <value>microns</value>
+        </exp>
+        <exp bool_exp="pv0==3 and pv1&lt;4">
+          <value>FS=1e6</value>
+        </exp>
+        <exp bool_exp="pv0==3 and pv1&gt;3">
+          <value>microns</value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+        <pv_name>$(P){BPM:$(NO)}FFT:Chan-SP</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_103</name>
+    <text>Peak Threshold</text>
+    <x>806</x>
+    <y>3</y>
+    <width>124</width>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_7</name>
+    <pv_name>$(P){BPM:$(NO)}FFT:Threshold-SP</pv_name>
+    <x>933</x>
+    <y>3</y>
+    <width>90</width>
+    <precision>3</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_104</name>
+    <text>Peaks Found</text>
+    <x>806</x>
+    <y>26</y>
+    <width>124</width>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_58</name>
+    <pv_name>$(P){BPM:$(NO)}FFT:Peak:Found-I</pv_name>
+    <x>933</x>
+    <y>26</y>
+    <width>90</width>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_10</name>
+    <y>195</y>
+    <width>192</width>
+    <height>80</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_56</name>
+      <width>192</width>
+      <height>80</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_124</name>
+      <text>zuFFT caClient Code</text>
+      <x>5</x>
+      <y>5</y>
+      <width>182</width>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_83</name>
+      <pv_name>$(P){BPM:$(NO)}FFT:LoopTime-I</pv_name>
+      <x>89</x>
+      <y>30</y>
+      <width>98</width>
+      <precision>0</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_125</name>
+      <text>Loop Time</text>
+      <x>5</x>
+      <y>30</y>
+      <width>80</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_84</name>
+      <pv_name>$(P){BPM:$(NO)}FFT:LoopCount-I</pv_name>
+      <x>89</x>
+      <y>55</y>
+      <width>98</width>
+      <precision>0</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_126</name>
+      <text>Loop Cntr</text>
+      <x>5</x>
+      <y>55</y>
+      <width>80</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>195</x>
+    <y>40</y>
+    <width>601</width>
+    <height>823</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="xyplot" version="3.0.0">
+      <name>X/Y Plot_1</name>
+      <x>8</x>
+      <y>6</y>
+      <width>585</width>
+      <height>580</height>
+      <show_legend>false</show_legend>
+      <rules>
+        <rule name="XaxisLabel" prop_id="x_axis.title" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Frequency (MHz)</value>
+          </exp>
+          <exp bool_exp="pv0==1 or pv0==2">
+            <value>Frequency (KHz)</value>
+          </exp>
+          <exp bool_exp="pv0==3">
+            <value>Frequency (Hz)</value>
+          </exp>
+          <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+        </rule>
+        <rule name="YaxisLabel" prop_id="y_axes[0].title" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Channel A</value>
+          </exp>
+          <exp bool_exp="pv0==1">
+            <value>Channel B</value>
+          </exp>
+          <exp bool_exp="pv0==2">
+            <value>Channel C</value>
+          </exp>
+          <exp bool_exp="pv0==3">
+            <value>Channel D</value>
+          </exp>
+          <exp bool_exp="pv0==4">
+            <value>X Position</value>
+          </exp>
+          <exp bool_exp="pv0==5">
+            <value>Y Position</value>
+          </exp>
+          <pv_name>$(P){BPM:$(NO)}FFT:Chan-SP</pv_name>
+        </rule>
+      </rules>
+      <x_axis>
+        <title>Frequency (KHz)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Sans" style="REGULAR" size="10.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Amplitude (ADC Counts)</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>true</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Sans" style="REGULAR" size="10.0">
+            </font>
+          </scale_font>
+          <on_right>false</on_right>
+          <visible>true</visible>
+          <color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </color>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(P){BPM:$(NO)}FFT:Freq-Wfm</x_pv>
+          <y_pv>$(P){BPM:$(NO)}FFT-Wfm</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>2</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>483</x>
+      <y>567</y>
+      <width>115</width>
+      <height>22</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_47</name>
+        <width>115</width>
+        <height>22</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color red="255" green="255" blue="177" alpha="150">
+          </color>
+        </background_color>
+        <corner_width>5</corner_width>
+        <corner_height>5</corner_height>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_118</name>
+        <text>dF:</text>
+        <width>27</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <horizontal_alignment>2</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_82</name>
+        <pv_name>$(P){BPM:$(NO)}FFT:deltaF-I</pv_name>
+        <x>27</x>
+        <width>50</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <transparent>true</transparent>
+        <precision>2</precision>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_119</name>
+        <text>dF:</text>
+        <x>78</x>
+        <width>35</width>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <rules>
+          <rule name="Text" prop_id="text" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>KHz</value>
+            </exp>
+            <exp bool_exp="pv0==1 or pv0==2">
+              <value>Hz</value>
+            </exp>
+            <exp bool_exp="pv0==3">
+              <value>mHz</value>
+            </exp>
+            <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_34</name>
+      <y>597</y>
+      <width>601</width>
+      <height>226</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_13</name>
+      <y>591</y>
+      <width>470</width>
+      <height>195</height>
+      <style>3</style>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="xyplot" version="3.0.0">
+      <name>X/Y Plot_10</name>
+      <x>8</x>
+      <y>602</y>
+      <width>585</width>
+      <height>218</height>
+      <show_legend>false</show_legend>
+      <rules>
+        <rule name="XaxisLabel" prop_id="x_axis.title" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>Frequency (MHz)</value>
+          </exp>
+          <exp bool_exp="pv0==1 or pv0==2">
+            <value>Frequency (KHz)</value>
+          </exp>
+          <exp bool_exp="pv0==3">
+            <value>Frequency (Hz)</value>
+          </exp>
+          <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+        </rule>
+      </rules>
+      <x_axis>
+        <title>Frequency (MHz)</title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>100.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Sans" style="REGULAR" size="10.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Integrated PSD</title>
+          <autoscale>true</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>0.0</minimum>
+          <maximum>100.0</maximum>
+          <show_grid>true</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Sans" style="REGULAR" size="10.0">
+            </font>
+          </scale_font>
+          <on_right>false</on_right>
+          <visible>true</visible>
+          <color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </color>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name></name>
+          <x_pv>$(P){BPM:$(NO)}FFT:Freq-Wfm</x_pv>
+          <y_pv>$(P){BPM:$(NO)}IPSD-Wfm</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="255">
+            </color>
+          </color>
+          <line_width>2</line_width>
+          <line_style>0</line_style>
+          <point_type>0</point_type>
+          <point_size>10</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <width>601</width>
+      <height>591</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <y>130</y>
+    <width>192</width>
+    <height>61</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_59</name>
+      <width>192</width>
+      <height>61</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_60</name>
+      <x>98</x>
+      <y>27</y>
+      <width>90</width>
+      <height>29</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_4</name>
+      <pv_name>$(P){BPM:$(NO)}EVR:EventNo-SP</pv_name>
+      <x>101</x>
+      <y>29</y>
+      <width>84</width>
+      <height>25</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="20.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <maximum>31.0</maximum>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_131</name>
+      <text>Event No</text>
+      <x>99</x>
+      <y>6</y>
+      <width>88</width>
+      <height>18</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_61</name>
+      <x>4</x>
+      <y>5</y>
+      <width>92</width>
+      <height>51</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_47</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(P){BPM:$(NO)}Trig:Strig-SP</pv_name>
+          <value>Trig</value>
+          <description>$(P){BPM:$(NO)}Trig:Strig-SP</description>
+        </action>
+      </actions>
+      <text>Soft Trig</text>
+      <x>7</x>
+      <y>8</y>
+      <width>86</width>
+      <height>45</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <confirm_message></confirm_message>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_130</name>
+    <text>RF Atten</text>
+    <x>5</x>
+    <y>90</y>
+    <width>89</width>
+    <height>30</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_57</name>
+    <x>97</x>
+    <y>89</y>
+    <width>91</width>
+    <height>32</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="spinner" version="2.0.0">
+    <name>Spinner_3</name>
+    <pv_name>$(P){BPM:$(NO)}Gain:RfAtte-SP</pv_name>
+    <x>99</x>
+    <y>91</y>
+    <width>87</width>
+    <height>28</height>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="20.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <maximum>31.0</maximum>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_58</name>
+    <y>85</y>
+    <width>192</width>
+    <height>40</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_14</name>
+    <y>40</y>
+    <width>192</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_63</name>
+      <width>192</width>
+      <height>40</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_139</name>
+      <text></text>
+      <x>5</x>
+      <y>5</y>
+      <width>182</width>
+      <height>30</height>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_6</name>
+      <pv_name>$(P){BPM:$(NO)}Alarm:PLL-I</pv_name>
+      <x>7</x>
+      <y>7</y>
+      <width>178</width>
+      <height>26</height>
+      <off_color>
+        <color red="255" green="180" blue="180">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="180" green="255" blue="180">
+        </color>
+      </on_color>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <y>370</y>
+    <width>191</width>
+    <height>268</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <width>61</width>
+      <height>190</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_45</name>
+        <y>26</y>
+        <width>61</width>
+        <height>164</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_2</name>
+        <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+        <x>4</x>
+        <y>30</y>
+        <width>53</width>
+        <height>158</height>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <selected_color>
+          <color red="255" green="216" blue="0">
+          </color>
+        </selected_color>
+        <horizontal>false</horizontal>
+        <items>
+          <item>ADC</item>
+          <item>TBT</item>
+          <item>FA</item>
+          <item>SA</item>
+        </items>
+        <items_from_pv>false</items_from_pv>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_109</name>
+        <text>Stream</text>
+        <x>2</x>
+        <width>57</width>
+        <height>25</height>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>2</border_width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>65</x>
+      <width>61</width>
+      <height>268</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_32</name>
+        <y>26</y>
+        <width>61</width>
+        <height>242</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button</name>
+        <pv_name>$(P){BPM:$(NO)}FFT:Chan-SP</pv_name>
+        <x>4</x>
+        <y>30</y>
+        <width>53</width>
+        <height>235</height>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <selected_color>
+          <color red="255" green="216" blue="0">
+          </color>
+        </selected_color>
+        <horizontal>false</horizontal>
+        <rules>
+          <rule name="item4" prop_id="items[4]" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>N/A</value>
+            </exp>
+            <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+          </rule>
+          <rule name="item5" prop_id="items[5]" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>N/A</value>
+            </exp>
+            <pv_name>$(P){BPM:$(NO)}FFT:Stream-SP</pv_name>
+          </rule>
+        </rules>
+        <items>
+          <item>A</item>
+          <item>B</item>
+          <item>C</item>
+          <item>D</item>
+          <item>X</item>
+          <item>Y</item>
+        </items>
+        <items_from_pv>false</items_from_pv>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_88</name>
+        <text>Chan</text>
+        <x>2</x>
+        <width>57</width>
+        <height>25</height>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>2</border_width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group</name>
+      <x>130</x>
+      <width>61</width>
+      <height>151</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_33</name>
+        <y>26</y>
+        <width>62</width>
+        <height>125</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_89</name>
+        <text>Unit</text>
+        <x>2</x>
+        <width>58</width>
+        <height>25</height>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>2</border_width>
+      </widget>
+      <widget type="choice" version="2.0.0">
+        <name>Choice Button_1</name>
+        <pv_name>$(P){BPM:$(NO)}FFT:Unit-SP</pv_name>
+        <x>4</x>
+        <y>30</y>
+        <width>54</width>
+        <height>117</height>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <selected_color>
+          <color red="255" green="216" blue="0">
+          </color>
+        </selected_color>
+        <horizontal>false</horizontal>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+          <item>Item 3</item>
+        </items>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <width>516</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Group_2</name>
+      <x>370</x>
+      <width>72</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_48</name>
+        <width>72</width>
+        <height>35</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_40</name>
+        <actions>
+          <action type="open_display">
+            <file>zuADC.bob</file>
+            <target>replace</target>
+            <description>Open Display</description>
+          </action>
+        </actions>
+        <text>ADC</text>
+        <x>3</x>
+        <y>3</y>
+        <width>66</width>
+        <height>29</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_3</name>
+      <x>444</x>
+      <width>72</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_49</name>
+        <width>72</width>
+        <height>35</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_41</name>
+        <actions>
+        </actions>
+        <text>FFT</text>
+        <x>3</x>
+        <y>3</y>
+        <width>66</width>
+        <height>29</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color red="255" green="216" blue="0">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_4</name>
+      <x>296</x>
+      <width>72</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_50</name>
+        <width>72</width>
+        <height>35</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_42</name>
+        <actions>
+          <action type="open_display">
+            <file>zuTbT.bob</file>
+            <target>replace</target>
+            <description>Open Display</description>
+          </action>
+        </actions>
+        <text>TBT</text>
+        <x>3</x>
+        <y>3</y>
+        <width>66</width>
+        <height>29</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_5</name>
+      <x>222</x>
+      <width>72</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_51</name>
+        <width>72</width>
+        <height>35</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_43</name>
+        <actions>
+          <action type="open_display">
+            <file>zuFA.bob</file>
+            <target>replace</target>
+            <description>Open Display</description>
+          </action>
+        </actions>
+        <text>FA</text>
+        <x>3</x>
+        <y>3</y>
+        <width>66</width>
+        <height>29</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_6</name>
+      <x>74</x>
+      <width>72</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_52</name>
+        <width>72</width>
+        <height>35</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_44</name>
+        <actions>
+          <action type="open_display">
+            <file>zuLive.bob</file>
+            <target>replace</target>
+            <description>Open Display</description>
+          </action>
+        </actions>
+        <text>Live</text>
+        <x>3</x>
+        <y>3</y>
+        <width>66</width>
+        <height>29</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_7</name>
+      <width>72</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_53</name>
+        <width>72</width>
+        <height>35</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_45</name>
+        <actions>
+          <action type="open_display">
+            <file>zuSystem.bob</file>
+            <target>replace</target>
+            <description>Open Display</description>
+          </action>
+        </actions>
+        <text>System</text>
+        <x>3</x>
+        <y>3</y>
+        <width>66</width>
+        <height>29</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_8</name>
+      <x>148</x>
+      <width>72</width>
+      <height>35</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_54</name>
+        <width>72</width>
+        <height>35</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="Grid" red="128" green="128" blue="128">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_46</name>
+        <actions>
+          <action type="open_display">
+            <file>zuSA.bob</file>
+            <target>replace</target>
+            <description>Open Display</description>
+          </action>
+        </actions>
+        <text>SA</text>
+        <x>3</x>
+        <y>3</y>
+        <width>66</width>
+        <height>29</height>
+        <font>
+          <font family="Liberation Sans" style="REGULAR" size="16.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Write_Background" red="128" green="255" blue="255">
+          </color>
+        </background_color>
+        <tooltip>$(actions)</tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_15</name>
+    <y>280</y>
+    <width>192</width>
+    <height>84</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_64</name>
+      <width>192</width>
+      <height>84</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_7</name>
+      <pv_name>$(P){BPM:$(NO)}DMA:TBTbusy-I</pv_name>
+      <x>50</x>
+      <y>50</y>
+      <width>44</width>
+      <height>30</height>
+      <off_color>
+        <color red="180" green="255" blue="180">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="216" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <pv_name>$(P){BPM:$(NO)}DMA:FAbusy-I</pv_name>
+      <x>96</x>
+      <y>50</y>
+      <width>44</width>
+      <height>30</height>
+      <off_color>
+        <color red="180" green="255" blue="180">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="216" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_140</name>
+      <text>ADC</text>
+      <x>5</x>
+      <y>30</y>
+      <width>42</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_141</name>
+      <text>TBT</text>
+      <x>51</x>
+      <y>30</y>
+      <width>42</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_142</name>
+      <text>FA</text>
+      <x>97</x>
+      <y>30</y>
+      <width>42</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_9</name>
+      <pv_name>$(P){BPM:$(NO)}DMA:ADCbusy-I</pv_name>
+      <x>4</x>
+      <y>50</y>
+      <width>44</width>
+      <height>30</height>
+      <off_color>
+        <color red="180" green="255" blue="180">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="216" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_143</name>
+      <text>DMA Activity</text>
+      <x>5</x>
+      <y>5</y>
+      <width>182</width>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_10</name>
+      <pv_name>$(P){BPM:$(NO)}DMA:Busy-I</pv_name>
+      <x>142</x>
+      <y>50</y>
+      <width>46</width>
+      <height>30</height>
+      <off_color>
+        <color red="180" green="255" blue="180">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="255" green="216" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_144</name>
+      <text>Tx</text>
+      <x>143</x>
+      <y>30</y>
+      <width>44</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_16</name>
+    <x>518</x>
+    <width>72</width>
+    <height>35</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_62</name>
+      <width>72</width>
+      <height>35</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_48</name>
+      <actions>
+        <action type="open_display">
+          <file>zuTemp.bob</file>
+          <target>replace</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Temp</text>
+      <x>3</x>
+      <y>3</y>
+      <width>66</width>
+      <height>29</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Write_Background" red="128" green="255" blue="255">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+    </widget>
+  </widget>
+</display>

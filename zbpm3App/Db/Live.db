@@ -1,0 +1,270 @@
+record(stringin, "$(P){BPM:$(NO)}Live:ADC:A:Buff-Wfm:T") {
+  field(DTYP, "Soft Timestamp")
+  field(TSEL, "$(P){BPM:$(NO)}Live:ADC:A:Buff-Wfm.TIME CP")
+  field(INP, "@%Y %d %H %M %S")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:A:Buff-Wfm") {
+    field(DESC, "117 MHz ADC0 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 51 0 8")
+    field(SCAN, "I/O Intr")
+    field(FTVL, "DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ALIVE)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:B:Buff-Wfm") {
+    field(DESC, "117 MHz ADC1 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 51 2 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ALIVE)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:C:Buff-Wfm") {
+    field(DESC, "117 MHz ADC2 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 51 4 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ALIVE)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:D:Buff-Wfm") {
+    field(DESC, "117 MHz ADC3 raw waveform")
+    field(DTYP, "PSC Block I16 In")
+    field(INP , "@aie_wfm_rx_$(NO) 51 6 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(HOPR, "32768")
+    field(LOPR, "-32767")
+    field(NELM,"$(ALIVE)")
+    field(TSE , "-2")
+    info("TimeFromBlock", "0")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:TBT:X:Buff-Wfm") {
+    field(DTYP, "PSC Block I32 In")
+    field(INP , "@aie_wfm_rx_$(NO) 52 0 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(NELM,"$(TLIVE)")
+
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:TBT:Y:Buff-Wfm") {
+    field(DTYP, "PSC Block I32 In")
+    field(INP , "@aie_wfm_rx_$(NO) 52 4 8")
+    field(SCAN,"I/O Intr")
+    field(FTVL,"DOUBLE")
+    field(NELM,"$(TLIVE)")
+    field(FLNK,"$(P){BPM:$(NO)}Live-Sub")
+}
+
+############################################################
+#
+#  PVs derived from the above values:
+#
+############################################################
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:A-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:B-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:C-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:D-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:ADC:Time-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:TBT:X-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:TBT:Y-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Live:TBT:Time-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"8000")
+  field(FTVL,"FLOAT")
+}
+
+record(longout,"$(P){BPM:$(NO)}Live:ADC:WfmLen-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P){BPM:$(NO)}Live:ADC:WfmOff-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P){BPM:$(NO)}Live:TBT:WfmLen-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longout,"$(P){BPM:$(NO)}Live:TBT:WfmOff-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P){BPM:$(NO)}Live:TBT:Xavg-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P){BPM:$(NO)}Live:TBT:Yavg-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P){BPM:$(NO)}Live:TBT:Xsig-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P){BPM:$(NO)}Live:TBT:Ysig-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P){BPM:$(NO)}Live:LoopTime-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FA code execution time")
+  field(VAL,0)
+  field(EGU,"us")
+  field(UDF,0)
+}
+
+record(longin,"$(P){BPM:$(NO)}Live:LoopCount-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FA code loop counter")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(aSub, "$(P){BPM:$(NO)}Live-Sub"){
+    field(SNAM, "LiveSub")
+
+    field(FTA,  "FLOAT")
+    field(NOA,  "8000")
+    field(INPA, "$(P){BPM:$(NO)}Live:ADC:A:Buff-Wfm")
+    field(FTB,  "FLOAT")
+    field(NOB,  "8000")
+    field(INPB, "$(P){BPM:$(NO)}Live:ADC:B:Buff-Wfm")
+    field(FTC,  "FLOAT")
+    field(NOC,  "8000")
+    field(INPC, "$(P){BPM:$(NO)}Live:ADC:C:Buff-Wfm")
+    field(FTD,  "FLOAT")
+    field(NOD,  "8000")
+    field(INPD, "$(P){BPM:$(NO)}Live:ADC:D:Buff-Wfm")
+    field(FTE,  "LONG")
+    field(NOE,  "1")
+    field(INPE, "$(P){BPM:$(NO)}Live:ADC:WfmLen-SP")
+    field(FTF,  "LONG")
+    field(NOF,  "1")
+    field(INPF, "$(P){BPM:$(NO)}Live:ADC:WfmOff-SP")
+    field(FTG,  "STRING")
+    field(NOG,  "80")
+    field(INPG, "$(P){BPM:$(NO)}Live:ADC:A:Buff-Wfm:T")
+    field(FTH,  "LONG")
+    field(NOH,  "1")
+    field(INPH, "$(P){BPM:$(NO)}Live:ADC:A:Buff-Wfm.NORD")
+    field(FTI,  "FLOAT")
+    field(NOI,  "8000")
+    field(INPI, "$(P){BPM:$(NO)}Live:TBT:X:Buff-Wfm")
+    field(FTJ,  "FLOAT")
+    field(NOJ,  "8000")
+    field(INPJ, "$(P){BPM:$(NO)}Live:TBT:Y:Buff-Wfm")
+    field(FTK,  "LONG")
+    field(NOK,  "1")
+    field(INPK, "$(P){BPM:$(NO)}Live:TBT:WfmLen-SP")
+    field(FTL,  "LONG")
+    field(NOL,  "1")
+    field(INPL, "$(P){BPM:$(NO)}Live:TBT:WfmOff-SP")
+    field(FTM,  "LONG")
+    field(NOM,  "1")
+    field(INPM, "$(P){BPM:$(NO)}Live:TBT:X:Buff-Wfm.NORD")
+
+    field(FTVA,  "FLOAT")
+    field(NOVA,  "1")
+    field(OUTA, "$(P){BPM:$(NO)}Live:TBT:Xavg-I PP")
+    field(FTVB,  "FLOAT")
+    field(NOVB,  "1")
+    field(OUTB, "$(P){BPM:$(NO)}Live:TBT:Yavg-I PP")
+    field(FTVC,  "FLOAT")
+    field(NOVC,  "1")
+    field(OUTC, "$(P){BPM:$(NO)}Live:TBT:Xsig-I PP")
+    field(FTVD,  "FLOAT")
+    field(NOVD,  "1")
+    field(OUTD, "$(P){BPM:$(NO)}Live:TBT:Ysig-I PP")
+    field(FTVE,  "LONG")
+    field(NOVE,  "1")
+    field(OUTE, "$(P){BPM:$(NO)}Live:ADC:WfmLen-SP PP")
+    field(FTVF,  "LONG")
+    field(NOVF,  "1")
+    field(OUTF, "$(P){BPM:$(NO)}Live:ADC:WfmOff-SP PP")
+    field(FTVG,  "LONG")
+    field(NOVG,  "1")
+    field(OUTG, "$(P){BPM:$(NO)}Live:TBT:WfmLen-SP PP")
+    field(FTVH,  "LONG")
+    field(NOVH,  "1")
+    field(OUTH, "$(P){BPM:$(NO)}Live:TBT:WfmOff-SP PP")
+}
+

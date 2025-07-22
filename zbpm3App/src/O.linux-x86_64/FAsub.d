@@ -1,0 +1,30 @@
+FAsub.o: ../FAsub.c /home/mead/epics/base-7.0.9/include/cadef.h \
+ /home/mead/epics/base-7.0.9/include/epicsThread.h \
+ /home/mead/epics/base-7.0.9/include/libComAPI.h \
+ /home/mead/epics/base-7.0.9/include/compilerDependencies.h \
+ /home/mead/epics/base-7.0.9/include/compiler/gcc/compilerSpecific.h \
+ /home/mead/epics/base-7.0.9/include/os/Linux/osdThread.h \
+ /home/mead/epics/base-7.0.9/include/libComAPI.h \
+ /home/mead/epics/base-7.0.9/include/ellLib.h \
+ /home/mead/epics/base-7.0.9/include/epicsEvent.h \
+ /home/mead/epics/base-7.0.9/include/os/Linux/osdEvent.h \
+ /home/mead/epics/base-7.0.9/include/libCaAPI.h \
+ /home/mead/epics/base-7.0.9/include/caerr.h \
+ /home/mead/epics/base-7.0.9/include/epicsTypes.h \
+ /home/mead/epics/base-7.0.9/include/db_access.h \
+ /home/mead/epics/base-7.0.9/include/epicsTime.h \
+ /home/mead/epics/base-7.0.9/include/os/Linux/osdTime.h \
+ /home/mead/epics/base-7.0.9/include/errMdef.h \
+ /home/mead/epics/base-7.0.9/include/caeventmask.h \
+ /home/mead/epics/base-7.0.9/include/aSubRecord.h \
+ /home/mead/epics/base-7.0.9/include/link.h \
+ /home/mead/epics/base-7.0.9/include/dbDefs.h \
+ /home/mead/epics/base-7.0.9/include/ellLib.h \
+ /home/mead/epics/base-7.0.9/include/dbCoreAPI.h \
+ /home/mead/epics/base-7.0.9/include/epicsMutex.h \
+ /home/mead/epics/base-7.0.9/include/epicsAssert.h \
+ /home/mead/epics/base-7.0.9/include/os/Linux/osdMutex.h \
+ /home/mead/epics/base-7.0.9/include/devSup.h \
+ /home/mead/epics/base-7.0.9/include/registryFunction.h \
+ /home/mead/epics/base-7.0.9/include/epicsExport.h \
+ /home/mead/epics/base-7.0.9/include/shareLib.h

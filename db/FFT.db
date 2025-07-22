@@ -1,0 +1,144 @@
+record(waveform,"$(P){BPM:$(NO)}FFT-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}IPSD-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Integrated PSD")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}FFT:Freq-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Frequency Array")
+  field(NELM,"10000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}FFT:Peak:Freq-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Frequency Array")
+  field(NELM,"50")
+  field(FTVL,"FLOAT")
+  field(EGU,"MHz")
+}
+
+record(waveform,"$(P){BPM:$(NO)}FFT:Peak:RfFreq-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Frequency Array")
+  field(NELM,"50")
+  field(FTVL,"FLOAT")
+  field(EGU,"MHz")
+}
+
+record(waveform,"$(P){BPM:$(NO)}FFT:Peak:Ampl-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Frequency Array")
+  field(NELM,"50")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}FFT:Peak:FWHM-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Frequency Array")
+  field(NELM,"50")
+  field(FTVL,"FLOAT")
+  field(EGU,"KHz")
+}
+
+record(mbbo,"$(P){BPM:$(NO)}FFT:Stream-SP"){
+  field(PINI,"YES")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+  field(TWVL,"2")
+  field(THVL,"3")
+
+  field(ZRST,"ADC")
+  field(ONST,"TBT")
+  field(TWST,"FA")
+  field(THST,"SA")
+}
+
+record(mbbo,"$(P){BPM:$(NO)}FFT:Chan-SP"){
+  field(PINI,"YES")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+  field(TWVL,"2")
+  field(THVL,"3")
+  field(FRVL,"4")
+  field(FVVL,"5")
+
+  field(ZRST,"A")
+  field(ONST,"B")
+  field(TWST,"C")
+  field(THST,"D")
+  field(FRST,"X")
+  field(FVST,"Y")
+}
+
+record(mbbo,"$(P){BPM:$(NO)}FFT:Unit-SP"){
+  field(PINI,"YES")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+  field(TWVL,"2")
+
+  field(ZRST,"Volt")
+  field(ONST,"dBfs")
+  field(TWST,"dBc")
+}
+
+record(mbbo,"$(P){BPM:$(NO)}FFT:Peak:Sort-SP"){
+  field(PINI,"YES")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+
+  field(ZRST,"Frequency")
+  field(ONST,"Amplitude")
+}
+
+record(ai,"$(P){BPM:$(NO)}FFT:deltaF-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ai,"$(P){BPM:$(NO)}FFT:0Hz-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"FFT Value at 0Hz")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P){BPM:$(NO)}FFT:LoopTime-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"TBT code execution time")
+  field(VAL,0)
+  field(EGU,"us")
+  field(UDF,0)
+}
+
+record(longin,"$(P){BPM:$(NO)}FFT:LoopCount-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"TBT code loop counter")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(ao,"$(P){BPM:$(NO)}FFT:Threshold-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,10)
+  field(UDF,10)
+}
+
+record(longin,"$(P){BPM:$(NO)}FFT:Peak:Found-I"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"Number of Peaks in FFT")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+

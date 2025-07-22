@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2024-11-06 13:30:59 by diag-->
+<display version="2.0.0">
+  <name>zuTop</name>
+  <width>1250</width>
+  <height>800</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>48</x>
+    <y>24</y>
+    <width>162</width>
+    <height>44</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>162</width>
+      <height>44</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <file>zuSA.bob</file>
+          <macros>
+            <P>lab-BI</P>
+            <NO>1</NO>
+          </macros>
+          <target>window</target>
+          <description>Open Display</description>
+        </action>
+      </actions>
+      <text>Start ZuBPM</text>
+      <x>1</x>
+      <y>1</y>
+      <width>160</width>
+      <height>41</height>
+      <font>
+        <font family="Segoe UI" style="REGULAR" size="17.821782178217823">
+        </font>
+      </font>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+</display>
