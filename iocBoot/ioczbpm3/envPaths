@@ -1,4 +1,4 @@
 epicsEnvSet("IOC","ioczbpm3")
-epicsEnvSet("TOP","/home/mead/rfbpm/ioc")
-epicsEnvSet("EPICS_BASE","/home/mead/epics/base-7.0.9")
-epicsEnvSet("PSCDRV","/home/mead/epics/pscdrv")
+epicsEnvSet("TOP","/home/diag/zubpm/zubpm-ioc")
+epicsEnvSet("EPICS_BASE","/home/diag/epics/base")
+epicsEnvSet("PSCDRV","/home/diag/epics/pscdrv")

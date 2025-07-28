@@ -339,7 +339,7 @@ static struct iocshVarDef vardefs[] = {
 int zbpm3_registerRecordDeviceDriver(DBBASE *pbase)
 {
     static int executed = 0;
-    const char *bldTop = "/home/mead/rfbpm/ioc";
+    const char *bldTop = "/home/diag/zubpm/zubpm-ioc";
     const char *envTop = getenv("TOP");
 
     if (envTop && strcmp(envTop, bldTop)) {

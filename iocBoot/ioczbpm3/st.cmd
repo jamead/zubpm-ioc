@@ -18,7 +18,7 @@ dbLoadDatabase "dbd/zbpm3.dbd"
 zbpm3_registerRecordDeviceDriver(pdbbase) 
 
 # BPM IP address
-epicsEnvSet("ZUBPM_IP", "10.0.142.60");  #4009
+epicsEnvSet("ZUBPM_IP", "10.0.142.43");  #4009
 
 
 ## Load record instances

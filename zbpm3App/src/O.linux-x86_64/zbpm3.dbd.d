@@ -1,118 +1,118 @@
-../O.Common/zbpm3.dbd: /home/mead/epics/base-7.0.9/dbd/base.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuGlobal.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuAlarmSevr.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuAlarmStat.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuFtype.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuIvoa.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuOmsl.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuPini.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuPost.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuPriority.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuYesNo.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuSimm.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuConvert.dbd \
-    /home/mead/epics/base-7.0.9/dbd/menuScan.dbd \
-    /home/mead/epics/base-7.0.9/dbd/stdRecords.dbd \
-    /home/mead/epics/base-7.0.9/dbd/aaiRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/dbCommon.dbd \
-    /home/mead/epics/base-7.0.9/dbd/aaoRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/aiRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/aoRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/aSubRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/biRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/boRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/calcRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/calcoutRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/compressRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/dfanoutRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/eventRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/fanoutRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/histogramRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/int64inRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/int64outRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/longinRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/longoutRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/lsiRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/lsoRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/mbbiRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/mbbiDirectRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/mbboRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/mbboDirectRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/permissiveRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/printfRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/selRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/seqRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/stateRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/stringinRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/stringoutRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/subRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/subArrayRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/waveformRecord.dbd \
-    /home/mead/epics/base-7.0.9/dbd/filters.dbd \
-    /home/mead/epics/base-7.0.9/dbd/links.dbd \
-    /home/mead/epics/base-7.0.9/dbd/devSoft.dbd \
-    /home/mead/epics/base-7.0.9/dbd/asSub.dbd \
-    /home/mead/epics/base-7.0.9/dbd/dbCore.dbd \
-    /home/mead/epics/base-7.0.9/dbd/rsrv.dbd \
+../O.Common/zbpm3.dbd: /home/diag/epics/base/dbd/base.dbd \
+    /home/diag/epics/base/dbd/menuGlobal.dbd \
+    /home/diag/epics/base/dbd/menuAlarmSevr.dbd \
+    /home/diag/epics/base/dbd/menuAlarmStat.dbd \
+    /home/diag/epics/base/dbd/menuFtype.dbd \
+    /home/diag/epics/base/dbd/menuIvoa.dbd \
+    /home/diag/epics/base/dbd/menuOmsl.dbd \
+    /home/diag/epics/base/dbd/menuPini.dbd \
+    /home/diag/epics/base/dbd/menuPost.dbd \
+    /home/diag/epics/base/dbd/menuPriority.dbd \
+    /home/diag/epics/base/dbd/menuYesNo.dbd \
+    /home/diag/epics/base/dbd/menuSimm.dbd \
+    /home/diag/epics/base/dbd/menuConvert.dbd \
+    /home/diag/epics/base/dbd/menuScan.dbd \
+    /home/diag/epics/base/dbd/stdRecords.dbd \
+    /home/diag/epics/base/dbd/aaiRecord.dbd \
+    /home/diag/epics/base/dbd/dbCommon.dbd \
+    /home/diag/epics/base/dbd/aaoRecord.dbd \
+    /home/diag/epics/base/dbd/aiRecord.dbd \
+    /home/diag/epics/base/dbd/aoRecord.dbd \
+    /home/diag/epics/base/dbd/aSubRecord.dbd \
+    /home/diag/epics/base/dbd/biRecord.dbd \
+    /home/diag/epics/base/dbd/boRecord.dbd \
+    /home/diag/epics/base/dbd/calcRecord.dbd \
+    /home/diag/epics/base/dbd/calcoutRecord.dbd \
+    /home/diag/epics/base/dbd/compressRecord.dbd \
+    /home/diag/epics/base/dbd/dfanoutRecord.dbd \
+    /home/diag/epics/base/dbd/eventRecord.dbd \
+    /home/diag/epics/base/dbd/fanoutRecord.dbd \
+    /home/diag/epics/base/dbd/histogramRecord.dbd \
+    /home/diag/epics/base/dbd/int64inRecord.dbd \
+    /home/diag/epics/base/dbd/int64outRecord.dbd \
+    /home/diag/epics/base/dbd/longinRecord.dbd \
+    /home/diag/epics/base/dbd/longoutRecord.dbd \
+    /home/diag/epics/base/dbd/lsiRecord.dbd \
+    /home/diag/epics/base/dbd/lsoRecord.dbd \
+    /home/diag/epics/base/dbd/mbbiRecord.dbd \
+    /home/diag/epics/base/dbd/mbbiDirectRecord.dbd \
+    /home/diag/epics/base/dbd/mbboRecord.dbd \
+    /home/diag/epics/base/dbd/mbboDirectRecord.dbd \
+    /home/diag/epics/base/dbd/permissiveRecord.dbd \
+    /home/diag/epics/base/dbd/printfRecord.dbd \
+    /home/diag/epics/base/dbd/selRecord.dbd \
+    /home/diag/epics/base/dbd/seqRecord.dbd \
+    /home/diag/epics/base/dbd/stateRecord.dbd \
+    /home/diag/epics/base/dbd/stringinRecord.dbd \
+    /home/diag/epics/base/dbd/stringoutRecord.dbd \
+    /home/diag/epics/base/dbd/subRecord.dbd \
+    /home/diag/epics/base/dbd/subArrayRecord.dbd \
+    /home/diag/epics/base/dbd/waveformRecord.dbd \
+    /home/diag/epics/base/dbd/filters.dbd \
+    /home/diag/epics/base/dbd/links.dbd \
+    /home/diag/epics/base/dbd/devSoft.dbd \
+    /home/diag/epics/base/dbd/asSub.dbd \
+    /home/diag/epics/base/dbd/dbCore.dbd \
+    /home/diag/epics/base/dbd/rsrv.dbd \
     ../../../dbd/zbpm3Subs.dbd \
-    /home/mead/epics/pscdrv/dbd/pscCore.dbd
+    /home/diag/epics/pscdrv/dbd/pscCore.dbd
 
-/home/mead/epics/base-7.0.9/dbd/base.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuGlobal.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuAlarmSevr.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuAlarmStat.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuFtype.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuIvoa.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuOmsl.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuPini.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuPost.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuPriority.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuYesNo.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuSimm.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuConvert.dbd:
-/home/mead/epics/base-7.0.9/dbd/menuScan.dbd:
-/home/mead/epics/base-7.0.9/dbd/stdRecords.dbd:
-/home/mead/epics/base-7.0.9/dbd/aaiRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/dbCommon.dbd:
-/home/mead/epics/base-7.0.9/dbd/aaoRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/aiRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/aoRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/aSubRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/biRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/boRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/calcRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/calcoutRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/compressRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/dfanoutRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/eventRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/fanoutRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/histogramRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/int64inRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/int64outRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/longinRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/longoutRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/lsiRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/lsoRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/mbbiRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/mbbiDirectRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/mbboRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/mbboDirectRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/permissiveRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/printfRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/selRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/seqRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/stateRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/stringinRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/stringoutRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/subRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/subArrayRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/waveformRecord.dbd:
-/home/mead/epics/base-7.0.9/dbd/filters.dbd:
-/home/mead/epics/base-7.0.9/dbd/links.dbd:
-/home/mead/epics/base-7.0.9/dbd/devSoft.dbd:
-/home/mead/epics/base-7.0.9/dbd/asSub.dbd:
-/home/mead/epics/base-7.0.9/dbd/dbCore.dbd:
-/home/mead/epics/base-7.0.9/dbd/rsrv.dbd:
+/home/diag/epics/base/dbd/base.dbd:
+/home/diag/epics/base/dbd/menuGlobal.dbd:
+/home/diag/epics/base/dbd/menuAlarmSevr.dbd:
+/home/diag/epics/base/dbd/menuAlarmStat.dbd:
+/home/diag/epics/base/dbd/menuFtype.dbd:
+/home/diag/epics/base/dbd/menuIvoa.dbd:
+/home/diag/epics/base/dbd/menuOmsl.dbd:
+/home/diag/epics/base/dbd/menuPini.dbd:
+/home/diag/epics/base/dbd/menuPost.dbd:
+/home/diag/epics/base/dbd/menuPriority.dbd:
+/home/diag/epics/base/dbd/menuYesNo.dbd:
+/home/diag/epics/base/dbd/menuSimm.dbd:
+/home/diag/epics/base/dbd/menuConvert.dbd:
+/home/diag/epics/base/dbd/menuScan.dbd:
+/home/diag/epics/base/dbd/stdRecords.dbd:
+/home/diag/epics/base/dbd/aaiRecord.dbd:
+/home/diag/epics/base/dbd/dbCommon.dbd:
+/home/diag/epics/base/dbd/aaoRecord.dbd:
+/home/diag/epics/base/dbd/aiRecord.dbd:
+/home/diag/epics/base/dbd/aoRecord.dbd:
+/home/diag/epics/base/dbd/aSubRecord.dbd:
+/home/diag/epics/base/dbd/biRecord.dbd:
+/home/diag/epics/base/dbd/boRecord.dbd:
+/home/diag/epics/base/dbd/calcRecord.dbd:
+/home/diag/epics/base/dbd/calcoutRecord.dbd:
+/home/diag/epics/base/dbd/compressRecord.dbd:
+/home/diag/epics/base/dbd/dfanoutRecord.dbd:
+/home/diag/epics/base/dbd/eventRecord.dbd:
+/home/diag/epics/base/dbd/fanoutRecord.dbd:
+/home/diag/epics/base/dbd/histogramRecord.dbd:
+/home/diag/epics/base/dbd/int64inRecord.dbd:
+/home/diag/epics/base/dbd/int64outRecord.dbd:
+/home/diag/epics/base/dbd/longinRecord.dbd:
+/home/diag/epics/base/dbd/longoutRecord.dbd:
+/home/diag/epics/base/dbd/lsiRecord.dbd:
+/home/diag/epics/base/dbd/lsoRecord.dbd:
+/home/diag/epics/base/dbd/mbbiRecord.dbd:
+/home/diag/epics/base/dbd/mbbiDirectRecord.dbd:
+/home/diag/epics/base/dbd/mbboRecord.dbd:
+/home/diag/epics/base/dbd/mbboDirectRecord.dbd:
+/home/diag/epics/base/dbd/permissiveRecord.dbd:
+/home/diag/epics/base/dbd/printfRecord.dbd:
+/home/diag/epics/base/dbd/selRecord.dbd:
+/home/diag/epics/base/dbd/seqRecord.dbd:
+/home/diag/epics/base/dbd/stateRecord.dbd:
+/home/diag/epics/base/dbd/stringinRecord.dbd:
+/home/diag/epics/base/dbd/stringoutRecord.dbd:
+/home/diag/epics/base/dbd/subRecord.dbd:
+/home/diag/epics/base/dbd/subArrayRecord.dbd:
+/home/diag/epics/base/dbd/waveformRecord.dbd:
+/home/diag/epics/base/dbd/filters.dbd:
+/home/diag/epics/base/dbd/links.dbd:
+/home/diag/epics/base/dbd/devSoft.dbd:
+/home/diag/epics/base/dbd/asSub.dbd:
+/home/diag/epics/base/dbd/dbCore.dbd:
+/home/diag/epics/base/dbd/rsrv.dbd:
 ../../../dbd/zbpm3Subs.dbd:
-/home/mead/epics/pscdrv/dbd/pscCore.dbd:
+/home/diag/epics/pscdrv/dbd/pscCore.dbd:
 ../O.Common/zbpm3.dbd: ../Makefile
