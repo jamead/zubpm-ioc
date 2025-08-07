@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-08-07 11:20:35 by diag-->
+<!--Saved on 2025-08-07 13:45:32 by diag-->
 <display version="2.0.0">
-  <name>zuTemp</name>
+  <name>zuTvsXY</name>
   <width>1200</width>
   <height>900</height>
   <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_63</name>
+    <x>560</x>
+    <y>674</y>
+    <width>111</width>
+    <height>54</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>197</x>
+    <y>40</y>
+    <width>682</width>
+    <height>620</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
     <name>Rectangle_46</name>
-    <y>648</y>
+    <y>649</y>
     <width>193</width>
     <height>171</height>
     <line_width>2</line_width>
@@ -19,7 +53,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_9</name>
     <x>111</x>
-    <y>607</y>
+    <y>608</y>
     <width>78</width>
     <height>32</height>
     <line_width>1</line_width>
@@ -512,7 +546,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_44</name>
-    <y>502</y>
+    <y>503</y>
     <width>193</width>
     <height>142</height>
     <line_width>2</line_width>
@@ -526,7 +560,7 @@
     <name>Label_25</name>
     <text>Wfm Reset</text>
     <x>5</x>
-    <y>608</y>
+    <y>609</y>
     <width>102</width>
     <height>30</height>
     <font>
@@ -546,7 +580,7 @@
     <name>Text Update_38</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Length-I</pv_name>
     <x>112</x>
-    <y>533</y>
+    <y>534</y>
     <width>76</width>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -561,7 +595,7 @@
     <name>Text Update_39</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Decimate-I</pv_name>
     <x>112</x>
-    <y>558</y>
+    <y>559</y>
     <width>76</width>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -576,7 +610,7 @@
     <name>Label_22</name>
     <text>Decimation</text>
     <x>5</x>
-    <y>558</y>
+    <y>559</y>
     <width>102</width>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -595,7 +629,7 @@
     <name>Label_23</name>
     <text>Data Length</text>
     <x>5</x>
-    <y>533</y>
+    <y>534</y>
     <width>102</width>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -614,7 +648,7 @@
     <name>Text Update_40</name>
     <pv_name>$(P){BPM:$(NO)}Temp:A-Wfm.NORD</pv_name>
     <x>112</x>
-    <y>583</y>
+    <y>584</y>
     <width>76</width>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -629,7 +663,7 @@
     <name>Label_24</name>
     <text>Wfm Length</text>
     <x>5</x>
-    <y>583</y>
+    <y>584</y>
     <width>102</width>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -648,7 +682,7 @@
     <name>Label_21</name>
     <text>Waveform Statistics</text>
     <x>5</x>
-    <y>508</y>
+    <y>509</y>
     <width>183</width>
     <font>
       <font family="Sans" style="REGULAR" size="14.0">
@@ -665,7 +699,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_56</name>
-    <y>256</y>
+    <y>257</y>
     <width>193</width>
     <height>242</height>
     <line_width>2</line_width>
@@ -696,7 +730,7 @@
     </actions>
     <text>RESET</text>
     <x>114</x>
-    <y>610</y>
+    <y>611</y>
     <width>72</width>
     <height>26</height>
     <font>
@@ -716,7 +750,7 @@
     <name>Label_7</name>
     <text>ADC AC</text>
     <x>5</x>
-    <y>427</y>
+    <y>428</y>
     <width>77</width>
     <height>30</height>
     <font>
@@ -736,7 +770,7 @@
     <name>Text Update_12</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Thermistor:AC-I</pv_name>
     <x>87</x>
-    <y>427</y>
+    <y>428</y>
     <height>30</height>
     <font>
       <font family="Sans" style="REGULAR" size="16.0">
@@ -751,7 +785,7 @@
     <name>Label_8</name>
     <text>ADC BD</text>
     <x>5</x>
-    <y>462</y>
+    <y>463</y>
     <width>77</width>
     <height>30</height>
     <font>
@@ -771,7 +805,7 @@
     <name>Text Update_15</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Thermistor:BD-I</pv_name>
     <x>87</x>
-    <y>462</y>
+    <y>463</y>
     <height>30</height>
     <font>
       <font family="Sans" style="REGULAR" size="16.0">
@@ -786,7 +820,7 @@
     <name>Text Update_7</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Thermistor:A-I</pv_name>
     <x>87</x>
-    <y>287</y>
+    <y>288</y>
     <height>30</height>
     <font>
       <font family="Sans" style="REGULAR" size="16.0">
@@ -801,7 +835,7 @@
     <name>Label_6</name>
     <text>Thermistor Temps (C)</text>
     <x>5</x>
-    <y>262</y>
+    <y>263</y>
     <width>183</width>
     <font>
       <font family="Sans" style="REGULAR" size="14.0">
@@ -820,7 +854,7 @@
     <name>Text Update_8</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Thermistor:B-I</pv_name>
     <x>87</x>
-    <y>322</y>
+    <y>323</y>
     <height>30</height>
     <font>
       <font family="Sans" style="REGULAR" size="16.0">
@@ -835,7 +869,7 @@
     <name>Text Update_9</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Thermistor:C-I</pv_name>
     <x>87</x>
-    <y>357</y>
+    <y>358</y>
     <height>30</height>
     <font>
       <font family="Sans" style="REGULAR" size="16.0">
@@ -850,7 +884,7 @@
     <name>Text Update_10</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Thermistor:D-I</pv_name>
     <x>87</x>
-    <y>392</y>
+    <y>393</y>
     <height>30</height>
     <font>
       <font family="Sans" style="REGULAR" size="16.0">
@@ -865,7 +899,7 @@
     <name>Label_3</name>
     <text>Chan B</text>
     <x>5</x>
-    <y>322</y>
+    <y>323</y>
     <width>77</width>
     <height>30</height>
     <font>
@@ -885,7 +919,7 @@
     <name>Label_4</name>
     <text>Chan C</text>
     <x>5</x>
-    <y>357</y>
+    <y>358</y>
     <width>77</width>
     <height>30</height>
     <font>
@@ -905,7 +939,7 @@
     <name>Label_5</name>
     <text>Chan D</text>
     <x>5</x>
-    <y>392</y>
+    <y>393</y>
     <width>77</width>
     <height>30</height>
     <font>
@@ -925,7 +959,7 @@
     <name>Label_1</name>
     <text>Chan A</text>
     <x>5</x>
-    <y>287</y>
+    <y>288</y>
     <width>77</width>
     <height>30</height>
     <font>
@@ -943,7 +977,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group_14</name>
-    <x>516</x>
+    <x>518</x>
     <width>72</width>
     <height>35</height>
     <style>3</style>
@@ -1460,36 +1494,65 @@
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
   </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_1</name>
-    <x>196</x>
-    <y>40</y>
-    <width>470</width>
-    <height>195</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Grid" red="128" green="128" blue="128">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-  </widget>
   <widget type="xyplot" version="3.0.0">
     <name>X/Y Plot</name>
-    <x>201</x>
-    <y>43</y>
-    <width>460</width>
-    <height>188</height>
+    <x>205</x>
+    <y>51</y>
+    <width>660</width>
+    <height>600</height>
     <show_legend>false</show_legend>
     <rules>
-      <rule name="New Rule" prop_id="name" out_exp="false">
+      <rule name="YaxisTitle" prop_id="y_axes[0].title" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>Y Position (um)</value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}Temp:Fit:Axis-SP</pv_name>
+      </rule>
+      <rule name="XaxisTitle" prop_id="x_axis.title" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>Thermistor B (C)</value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>Thermistor C (C)</value>
+        </exp>
+        <exp bool_exp="pvInt0==3">
+          <value>Thermistor D (C)</value>
+        </exp>
+        <exp bool_exp="pvInt0==4">
+          <value>Thermistor AC (C)</value>
+        </exp>
+        <exp bool_exp="pvInt0==5">
+          <value>Thermistor BD (C)</value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}Temp:Fit:Sensor-SP</pv_name>
+      </rule>
+      <rule name="Xpv" prop_id="traces[0].x_pv" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>$(P){BPM:$(NO)}Temp:B-Wfm</value>
+        </exp>
+        <exp bool_exp="pvInt0==2">
+          <value>$(P){BPM:$(NO)}Temp:C-Wfm</value>
+        </exp>
+        <exp bool_exp="pvInt0==3">
+          <value>$(P){BPM:$(NO)}Temp:D-Wfm</value>
+        </exp>
+        <exp bool_exp="pvInt0==4">
+          <value>$(P){BPM:$(NO)}Temp:AC-Wfm</value>
+        </exp>
+        <exp bool_exp="pvInt0==5">
+          <value>$(P){BPM:$(NO)}Temp:BD-Wfm</value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}Temp:Fit:Sensor-SP</pv_name>
+      </rule>
+      <rule name="Ypv" prop_id="traces[0].y_pv" out_exp="false">
+        <exp bool_exp="pvInt0==1">
+          <value>$(P){BPM:$(NO)}Temp:Y-Wfm</value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}Temp:Fit:Axis-SP</pv_name>
       </rule>
     </rules>
     <x_axis>
-      <title>Time (Minutes)</title>
+      <title>Thermistor A (C)</title>
       <autoscale>true</autoscale>
       <log_scale>false</log_scale>
       <minimum>0.0</minimum>
@@ -1507,7 +1570,7 @@
     </x_axis>
     <y_axes>
       <y_axis>
-        <title>Thermistor:A (C)</title>
+        <title>X Position (um)</title>
         <autoscale>true</autoscale>
         <log_scale>false</log_scale>
         <minimum>0.0</minimum>
@@ -1532,8 +1595,8 @@
     <traces>
       <trace>
         <name></name>
-        <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-        <y_pv>$(P){BPM:$(NO)}Temp:A-Wfm</y_pv>
+        <x_pv>$(P){BPM:$(NO)}Temp:A-Wfm</x_pv>
+        <y_pv>$(P){BPM:$(NO)}Temp:X-Wfm</y_pv>
         <err_pv></err_pv>
         <axis>0</axis>
         <trace_type>1</trace_type>
@@ -1541,656 +1604,24 @@
           <color red="0" green="0" blue="255">
           </color>
         </color>
-        <line_width>1</line_width>
+        <line_width>0</line_width>
         <line_style>0</line_style>
-        <point_type>0</point_type>
-        <point_size>10</point_size>
+        <point_type>2</point_type>
+        <point_size>6</point_size>
         <visible>true</visible>
       </trace>
-    </traces>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_2</name>
-    <x>196</x>
-    <y>237</y>
-    <width>470</width>
-    <height>195</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Grid" red="128" green="128" blue="128">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-  </widget>
-  <widget type="xyplot" version="3.0.0">
-    <name>X/Y Plot_1</name>
-    <x>201</x>
-    <y>241</y>
-    <width>460</width>
-    <height>188</height>
-    <show_legend>false</show_legend>
-    <rules>
-      <rule name="New Rule" prop_id="name" out_exp="false">
-      </rule>
-    </rules>
-    <x_axis>
-      <title>Time (Minutes)</title>
-      <autoscale>true</autoscale>
-      <log_scale>false</log_scale>
-      <minimum>0.0</minimum>
-      <maximum>100.0</maximum>
-      <show_grid>true</show_grid>
-      <title_font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </title_font>
-      <scale_font>
-        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-        </font>
-      </scale_font>
-      <visible>true</visible>
-    </x_axis>
-    <y_axes>
-      <y_axis>
-        <title>Thermistor:B (C)</title>
-        <autoscale>true</autoscale>
-        <log_scale>false</log_scale>
-        <minimum>0.0</minimum>
-        <maximum>100.0</maximum>
-        <show_grid>true</show_grid>
-        <title_font>
-          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-          </font>
-        </title_font>
-        <scale_font>
-          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-          </font>
-        </scale_font>
-        <on_right>false</on_right>
-        <visible>true</visible>
-        <color>
-          <color name="Text" red="0" green="0" blue="0">
-          </color>
-        </color>
-      </y_axis>
-    </y_axes>
-    <traces>
       <trace>
-        <name></name>
-        <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-        <y_pv>$(P){BPM:$(NO)}Temp:B-Wfm</y_pv>
+        <name>X Linear Fit</name>
+        <x_pv>$(P){BPM:$(NO)}Temp:Fit:Temp-Wfm</x_pv>
+        <y_pv>$(P){BPM:$(NO)}Temp:Fit:Pos-Wfm</y_pv>
         <err_pv></err_pv>
         <axis>0</axis>
         <trace_type>1</trace_type>
         <color>
-          <color red="0" green="0" blue="255">
+          <color red="255" green="0" blue="0">
           </color>
         </color>
-        <line_width>1</line_width>
-        <line_style>0</line_style>
-        <point_type>0</point_type>
-        <point_size>10</point_size>
-        <visible>true</visible>
-      </trace>
-    </traces>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_3</name>
-    <x>196</x>
-    <y>434</y>
-    <width>470</width>
-    <height>195</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Grid" red="128" green="128" blue="128">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-  </widget>
-  <widget type="xyplot" version="3.0.0">
-    <name>X/Y Plot_2</name>
-    <x>201</x>
-    <y>438</y>
-    <width>460</width>
-    <height>188</height>
-    <show_legend>false</show_legend>
-    <rules>
-      <rule name="New Rule" prop_id="name" out_exp="false">
-      </rule>
-    </rules>
-    <x_axis>
-      <title>Time (Minutes)</title>
-      <autoscale>true</autoscale>
-      <log_scale>false</log_scale>
-      <minimum>0.0</minimum>
-      <maximum>100.0</maximum>
-      <show_grid>true</show_grid>
-      <title_font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </title_font>
-      <scale_font>
-        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-        </font>
-      </scale_font>
-      <visible>true</visible>
-    </x_axis>
-    <y_axes>
-      <y_axis>
-        <title>Thermistor:C (C)</title>
-        <autoscale>true</autoscale>
-        <log_scale>false</log_scale>
-        <minimum>0.0</minimum>
-        <maximum>100.0</maximum>
-        <show_grid>true</show_grid>
-        <title_font>
-          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-          </font>
-        </title_font>
-        <scale_font>
-          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-          </font>
-        </scale_font>
-        <on_right>false</on_right>
-        <visible>true</visible>
-        <color>
-          <color name="Text" red="0" green="0" blue="0">
-          </color>
-        </color>
-      </y_axis>
-    </y_axes>
-    <traces>
-      <trace>
-        <name></name>
-        <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-        <y_pv>$(P){BPM:$(NO)}Temp:C-Wfm</y_pv>
-        <err_pv></err_pv>
-        <axis>0</axis>
-        <trace_type>1</trace_type>
-        <color>
-          <color red="0" green="0" blue="255">
-          </color>
-        </color>
-        <line_width>1</line_width>
-        <line_style>0</line_style>
-        <point_type>0</point_type>
-        <point_size>10</point_size>
-        <visible>true</visible>
-      </trace>
-    </traces>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_4</name>
-    <x>196</x>
-    <y>631</y>
-    <width>470</width>
-    <height>195</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Grid" red="128" green="128" blue="128">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-  </widget>
-  <widget type="xyplot" version="3.0.0">
-    <name>X/Y Plot_3</name>
-    <x>201</x>
-    <y>635</y>
-    <width>460</width>
-    <height>188</height>
-    <show_legend>false</show_legend>
-    <rules>
-      <rule name="New Rule" prop_id="name" out_exp="false">
-      </rule>
-    </rules>
-    <x_axis>
-      <title>Time (Minutes)</title>
-      <autoscale>true</autoscale>
-      <log_scale>false</log_scale>
-      <minimum>0.0</minimum>
-      <maximum>100.0</maximum>
-      <show_grid>true</show_grid>
-      <title_font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </title_font>
-      <scale_font>
-        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-        </font>
-      </scale_font>
-      <visible>true</visible>
-    </x_axis>
-    <y_axes>
-      <y_axis>
-        <title>Thermistor:D (C)</title>
-        <autoscale>true</autoscale>
-        <log_scale>false</log_scale>
-        <minimum>0.0</minimum>
-        <maximum>100.0</maximum>
-        <show_grid>true</show_grid>
-        <title_font>
-          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-          </font>
-        </title_font>
-        <scale_font>
-          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-          </font>
-        </scale_font>
-        <on_right>false</on_right>
-        <visible>true</visible>
-        <color>
-          <color name="Text" red="0" green="0" blue="0">
-          </color>
-        </color>
-      </y_axis>
-    </y_axes>
-    <traces>
-      <trace>
-        <name></name>
-        <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-        <y_pv>$(P){BPM:$(NO)}Temp:D-Wfm</y_pv>
-        <err_pv></err_pv>
-        <axis>0</axis>
-        <trace_type>1</trace_type>
-        <color>
-          <color red="0" green="0" blue="255">
-          </color>
-        </color>
-        <line_width>1</line_width>
-        <line_style>0</line_style>
-        <point_type>0</point_type>
-        <point_size>10</point_size>
-        <visible>true</visible>
-      </trace>
-    </traces>
-  </widget>
-  <widget type="group" version="3.0.0">
-    <name>Group_6</name>
-    <x>670</x>
-    <y>40</y>
-    <width>470</width>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_5</name>
-      <width>470</width>
-      <height>195</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <background_color>
-        <color name="Grid" red="128" green="128" blue="128">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-    </widget>
-    <widget type="xyplot" version="3.0.0">
-      <name>X/Y Plot_4</name>
-      <x>5</x>
-      <y>4</y>
-      <width>460</width>
-      <height>188</height>
-      <show_legend>false</show_legend>
-      <rules>
-        <rule name="New Rule" prop_id="name" out_exp="false">
-        </rule>
-      </rules>
-      <x_axis>
-        <title>Time (Minutes)</title>
-        <autoscale>true</autoscale>
-        <log_scale>false</log_scale>
-        <minimum>0.0</minimum>
-        <maximum>100.0</maximum>
-        <show_grid>true</show_grid>
-        <title_font>
-          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-          </font>
-        </title_font>
-        <scale_font>
-          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-          </font>
-        </scale_font>
-        <visible>true</visible>
-      </x_axis>
-      <y_axes>
-        <y_axis>
-          <title>Thermistor:AC (C)</title>
-          <autoscale>true</autoscale>
-          <log_scale>false</log_scale>
-          <minimum>0.0</minimum>
-          <maximum>100.0</maximum>
-          <show_grid>true</show_grid>
-          <title_font>
-            <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-            </font>
-          </title_font>
-          <scale_font>
-            <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-            </font>
-          </scale_font>
-          <on_right>false</on_right>
-          <visible>true</visible>
-          <color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </color>
-        </y_axis>
-      </y_axes>
-      <traces>
-        <trace>
-          <name></name>
-          <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-          <y_pv>$(P){BPM:$(NO)}Temp:AC-Wfm</y_pv>
-          <err_pv></err_pv>
-          <axis>0</axis>
-          <trace_type>1</trace_type>
-          <color>
-            <color red="0" green="0" blue="255">
-            </color>
-          </color>
-          <line_width>1</line_width>
-          <line_style>0</line_style>
-          <point_type>0</point_type>
-          <point_size>10</point_size>
-          <visible>true</visible>
-        </trace>
-      </traces>
-    </widget>
-  </widget>
-  <widget type="group" version="3.0.0">
-    <name>Group_7</name>
-    <x>670</x>
-    <y>237</y>
-    <width>470</width>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_6</name>
-      <width>470</width>
-      <height>195</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <background_color>
-        <color name="Grid" red="128" green="128" blue="128">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-    </widget>
-    <widget type="xyplot" version="3.0.0">
-      <name>X/Y Plot_5</name>
-      <x>5</x>
-      <y>4</y>
-      <width>460</width>
-      <height>188</height>
-      <show_legend>false</show_legend>
-      <rules>
-        <rule name="New Rule" prop_id="name" out_exp="false">
-        </rule>
-      </rules>
-      <x_axis>
-        <title>Time (Minutes)</title>
-        <autoscale>true</autoscale>
-        <log_scale>false</log_scale>
-        <minimum>0.0</minimum>
-        <maximum>100.0</maximum>
-        <show_grid>true</show_grid>
-        <title_font>
-          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-          </font>
-        </title_font>
-        <scale_font>
-          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-          </font>
-        </scale_font>
-        <visible>true</visible>
-      </x_axis>
-      <y_axes>
-        <y_axis>
-          <title>Thermistor:BD (C)</title>
-          <autoscale>true</autoscale>
-          <log_scale>false</log_scale>
-          <minimum>0.0</minimum>
-          <maximum>100.0</maximum>
-          <show_grid>true</show_grid>
-          <title_font>
-            <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-            </font>
-          </title_font>
-          <scale_font>
-            <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-            </font>
-          </scale_font>
-          <on_right>false</on_right>
-          <visible>true</visible>
-          <color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </color>
-        </y_axis>
-      </y_axes>
-      <traces>
-        <trace>
-          <name></name>
-          <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-          <y_pv>$(P){BPM:$(NO)}Temp:BD-Wfm</y_pv>
-          <err_pv></err_pv>
-          <axis>0</axis>
-          <trace_type>1</trace_type>
-          <color>
-            <color red="0" green="0" blue="255">
-            </color>
-          </color>
-          <line_width>1</line_width>
-          <line_style>0</line_style>
-          <point_type>0</point_type>
-          <point_size>10</point_size>
-          <visible>true</visible>
-        </trace>
-      </traces>
-    </widget>
-  </widget>
-  <widget type="group" version="3.0.0">
-    <name>Group_16</name>
-    <x>670</x>
-    <y>434</y>
-    <width>470</width>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_60</name>
-      <width>470</width>
-      <height>195</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="Text" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <background_color>
-        <color name="Grid" red="128" green="128" blue="128">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-    </widget>
-    <widget type="xyplot" version="3.0.0">
-      <name>X/Y Plot_6</name>
-      <x>5</x>
-      <y>4</y>
-      <width>460</width>
-      <height>188</height>
-      <show_legend>false</show_legend>
-      <rules>
-        <rule name="New Rule" prop_id="name" out_exp="false">
-        </rule>
-      </rules>
-      <x_axis>
-        <title>Time (Minutes)</title>
-        <autoscale>true</autoscale>
-        <log_scale>false</log_scale>
-        <minimum>0.0</minimum>
-        <maximum>100.0</maximum>
-        <show_grid>true</show_grid>
-        <title_font>
-          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-          </font>
-        </title_font>
-        <scale_font>
-          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-          </font>
-        </scale_font>
-        <visible>true</visible>
-      </x_axis>
-      <y_axes>
-        <y_axis>
-          <title>X position (um)</title>
-          <autoscale>true</autoscale>
-          <log_scale>false</log_scale>
-          <minimum>0.0</minimum>
-          <maximum>100.0</maximum>
-          <show_grid>true</show_grid>
-          <title_font>
-            <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-            </font>
-          </title_font>
-          <scale_font>
-            <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-            </font>
-          </scale_font>
-          <on_right>false</on_right>
-          <visible>true</visible>
-          <color>
-            <color name="Text" red="0" green="0" blue="0">
-            </color>
-          </color>
-        </y_axis>
-      </y_axes>
-      <traces>
-        <trace>
-          <name></name>
-          <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-          <y_pv>$(P){BPM:$(NO)}Temp:X-Wfm</y_pv>
-          <err_pv></err_pv>
-          <axis>0</axis>
-          <trace_type>1</trace_type>
-          <color>
-            <color red="0" green="0" blue="255">
-            </color>
-          </color>
-          <line_width>1</line_width>
-          <line_style>0</line_style>
-          <point_type>0</point_type>
-          <point_size>10</point_size>
-          <visible>true</visible>
-        </trace>
-      </traces>
-    </widget>
-  </widget>
-  <widget type="group" version="3.0.0">
-    <name>Group_17</name>
-    <x>670</x>
-    <y>632</y>
-    <width>470</width>
-    <style>3</style>
-    <transparent>true</transparent>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_61</name>
-    <x>670</x>
-    <y>631</y>
-    <width>470</width>
-    <height>195</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="Text" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="Grid" red="128" green="128" blue="128">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-  </widget>
-  <widget type="xyplot" version="3.0.0">
-    <name>X/Y Plot_7</name>
-    <x>675</x>
-    <y>635</y>
-    <width>460</width>
-    <height>188</height>
-    <show_legend>false</show_legend>
-    <rules>
-      <rule name="New Rule" prop_id="name" out_exp="false">
-      </rule>
-    </rules>
-    <x_axis>
-      <title>Time (Minutes)</title>
-      <autoscale>true</autoscale>
-      <log_scale>false</log_scale>
-      <minimum>0.0</minimum>
-      <maximum>100.0</maximum>
-      <show_grid>true</show_grid>
-      <title_font>
-        <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </title_font>
-      <scale_font>
-        <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-        </font>
-      </scale_font>
-      <visible>true</visible>
-    </x_axis>
-    <y_axes>
-      <y_axis>
-        <title>Y Position (um)</title>
-        <autoscale>true</autoscale>
-        <log_scale>false</log_scale>
-        <minimum>0.0</minimum>
-        <maximum>100.0</maximum>
-        <show_grid>true</show_grid>
-        <title_font>
-          <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-          </font>
-        </title_font>
-        <scale_font>
-          <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
-          </font>
-        </scale_font>
-        <on_right>false</on_right>
-        <visible>true</visible>
-        <color>
-          <color name="Text" red="0" green="0" blue="0">
-          </color>
-        </color>
-      </y_axis>
-    </y_axes>
-    <traces>
-      <trace>
-        <name></name>
-        <x_pv>$(P){BPM:$(NO)}Temp:Time-Wfm</x_pv>
-        <y_pv>$(P){BPM:$(NO)}Temp:Y-Wfm</y_pv>
-        <err_pv></err_pv>
-        <axis>0</axis>
-        <trace_type>1</trace_type>
-        <color>
-          <color red="0" green="0" blue="255">
-          </color>
-        </color>
-        <line_width>1</line_width>
+        <line_width>2</line_width>
         <line_style>0</line_style>
         <point_type>0</point_type>
         <point_size>10</point_size>
@@ -2202,7 +1633,7 @@
     <name>Text Update_13</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Xavg-I</pv_name>
     <x>75</x>
-    <y>678</y>
+    <y>679</y>
     <width>112</width>
     <height>30</height>
     <font>
@@ -2218,7 +1649,7 @@
     <name>Label_9</name>
     <text>Beam Position Stats</text>
     <x>5</x>
-    <y>653</y>
+    <y>654</y>
     <width>183</width>
     <font>
       <font family="Sans" style="REGULAR" size="14.0">
@@ -2237,7 +1668,7 @@
     <name>Text Update_14</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Yavg-I</pv_name>
     <x>75</x>
-    <y>713</y>
+    <y>714</y>
     <width>112</width>
     <height>30</height>
     <font>
@@ -2253,7 +1684,7 @@
     <name>Label_11</name>
     <text>Yavg</text>
     <x>5</x>
-    <y>713</y>
+    <y>714</y>
     <width>65</width>
     <height>30</height>
     <font>
@@ -2273,7 +1704,7 @@
     <name>Label_12</name>
     <text>Xavg</text>
     <x>5</x>
-    <y>678</y>
+    <y>679</y>
     <width>65</width>
     <height>30</height>
     <font>
@@ -2293,7 +1724,7 @@
     <name>Text Update_16</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Xsig-I</pv_name>
     <x>75</x>
-    <y>748</y>
+    <y>749</y>
     <width>112</width>
     <height>30</height>
     <font>
@@ -2309,7 +1740,7 @@
     <name>Text Update_18</name>
     <pv_name>$(P){BPM:$(NO)}Temp:Ysig-I</pv_name>
     <x>75</x>
-    <y>783</y>
+    <y>784</y>
     <width>112</width>
     <height>30</height>
     <font>
@@ -2325,7 +1756,7 @@
     <name>Label_13</name>
     <text>Ysig</text>
     <x>5</x>
-    <y>783</y>
+    <y>784</y>
     <width>65</width>
     <height>30</height>
     <font>
@@ -2345,7 +1776,7 @@
     <name>Label_14</name>
     <text>Xsig</text>
     <x>5</x>
-    <y>748</y>
+    <y>749</y>
     <width>65</width>
     <height>30</height>
     <font>
@@ -2361,8 +1792,48 @@
     <vertical_alignment>1</vertical_alignment>
     <border_width>1</border_width>
   </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button</name>
+    <pv_name>$(P){BPM:$(NO)}Temp:Fit:Sensor-SP</pv_name>
+    <x>202</x>
+    <y>679</y>
+    <width>300</width>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <selected_color>
+      <color name="Attention" red="255" green="160" blue="0">
+      </color>
+    </selected_color>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+      <item>Item 3</item>
+      <item>Item 4</item>
+      <item>Item 5</item>
+      <item>Item 6</item>
+    </items>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_53</name>
+    <x>197</x>
+    <y>674</y>
+    <width>309</width>
+    <height>54</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Grid" red="128" green="128" blue="128">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+  </widget>
   <widget type="group" version="3.0.0">
-    <name>Group</name>
+    <name>Group_3</name>
     <x>20</x>
     <y>834</y>
     <width>158</width>
@@ -2388,12 +1859,12 @@
       <name>Action Button_50</name>
       <actions>
         <action type="open_display">
-          <file>zuTvsXY.bob</file>
+          <file>zuTemp.bob</file>
           <target>replace</target>
           <description>Open Display</description>
         </action>
       </actions>
-      <text>Temp vs XY</text>
+      <text>Temp vs Time</text>
       <x>4</x>
       <y>5</y>
       <width>149</width>
@@ -2411,9 +1882,175 @@
       <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
     </widget>
   </widget>
+  <widget type="choice" version="2.0.0">
+    <name>Choice Button_1</name>
+    <pv_name>$(P){BPM:$(NO)}Temp:Fit:Axis-SP</pv_name>
+    <x>565</x>
+    <y>679</y>
+    <width>101</width>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <selected_color>
+      <color name="Attention" red="255" green="160" blue="0">
+      </color>
+    </selected_color>
+    <items>
+      <item>Item 1</item>
+      <item>Item 2</item>
+    </items>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>686</x>
+    <y>664</y>
+    <width>193</width>
+    <height>137</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>$(P){BPM:$(NO)}Temp:Fit:Slope-I</pv_name>
+      <x>75</x>
+      <y>31</y>
+      <width>112</width>
+      <height>30</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_20</name>
+      <pv_name>$(P){BPM:$(NO)}Temp:Fit:Intercept-I</pv_name>
+      <x>75</x>
+      <y>66</y>
+      <width>112</width>
+      <height>30</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>Intcpt</text>
+      <x>5</x>
+      <y>66</y>
+      <width>65</width>
+      <height>30</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Slope</text>
+      <x>5</x>
+      <y>31</y>
+      <width>65</width>
+      <height>30</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_21</name>
+      <pv_name>$(P){BPM:$(NO)}Temp:Fit:Correlation-I</pv_name>
+      <x>75</x>
+      <y>101</y>
+      <width>112</width>
+      <height>30</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="16.0">
+        </font>
+      </font>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>Correl</text>
+      <x>5</x>
+      <y>101</y>
+      <width>65</width>
+      <height>30</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>Linear Fit</text>
+      <x>5</x>
+      <y>6</y>
+      <width>183</width>
+      <font>
+        <font family="Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_64</name>
+      <width>193</width>
+      <height>137</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_68</name>
-    <y>127</y>
+    <y>128</y>
     <width>193</width>
     <height>125</height>
     <line_width>2</line_width>
@@ -2426,7 +2063,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_69</name>
     <x>98</x>
-    <y>197</y>
+    <y>198</y>
     <width>91</width>
     <height>24</height>
     <line_width>1</line_width>
@@ -2439,7 +2076,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_70</name>
     <x>98</x>
-    <y>156</y>
+    <y>157</y>
     <width>91</width>
     <height>38</height>
     <line_width>1</line_width>
@@ -2452,7 +2089,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_71</name>
     <x>4</x>
-    <y>156</y>
+    <y>157</y>
     <width>91</width>
     <height>38</height>
     <line_width>1</line_width>
@@ -2476,9 +2113,9 @@
         <description>WritePV</description>
       </action>
     </actions>
-    <text>ON</text>
+    <text>OFF</text>
     <x>8</x>
-    <y>160</y>
+    <y>161</y>
     <width>83</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="16.0">
@@ -2511,9 +2148,9 @@
         <description>WritePV</description>
       </action>
     </actions>
-    <text>OFF</text>
+    <text>ON</text>
     <x>102</x>
-    <y>160</y>
+    <y>161</y>
     <width>83</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="16.0">
@@ -2538,10 +2175,10 @@
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_30</name>
+    <name>Label_133</name>
     <text>RF Switching</text>
     <x>5</x>
-    <y>132</y>
+    <y>133</y>
     <width>183</width>
     <font>
       <font family="Sans" style="REGULAR" size="14.0">
@@ -2557,10 +2194,10 @@
     <border_width>1</border_width>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_34</name>
+    <name>Label_134</name>
     <text>Turn Dly</text>
     <x>5</x>
-    <y>198</y>
+    <y>199</y>
     <width>89</width>
     <height>22</height>
     <font>
@@ -2577,10 +2214,10 @@
     <border_width>1</border_width>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_35</name>
+    <name>Label_135</name>
     <text>Demux Dly</text>
     <x>5</x>
-    <y>225</y>
+    <y>226</y>
     <width>89</width>
     <height>22</height>
     <font>
@@ -2600,14 +2237,14 @@
     <name>Text Entry</name>
     <pv_name>$(P){BPM:$(NO)}RFSW:TrigDly-SP</pv_name>
     <x>101</x>
-    <y>199</y>
+    <y>200</y>
     <width>85</width>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_72</name>
+    <name>Rectangle_74</name>
     <x>98</x>
-    <y>224</y>
+    <y>225</y>
     <width>91</width>
     <height>24</height>
     <line_width>1</line_width>
@@ -2621,7 +2258,7 @@
     <name>Text Entry_1</name>
     <pv_name>$(P){BPM:$(NO)}RFSW:DeMuxDly-SP</pv_name>
     <x>101</x>
-    <y>226</y>
+    <y>227</y>
     <width>85</width>
     <horizontal_alignment>1</horizontal_alignment>
   </widget>

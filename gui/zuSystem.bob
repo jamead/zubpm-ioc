@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-20 15:16:35 by diag-->
+<!--Saved on 2025-08-07 13:47:26 by diag-->
 <display version="2.0.0">
   <name>zuSystem</name>
   <width>1200</width>
   <height>900</height>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_54</name>
-    <x>158</x>
+    <x>350</x>
     <y>539</y>
     <width>215</width>
     <height>167</height>
@@ -19,7 +19,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_51</name>
-    <x>162</x>
+    <x>354</x>
     <y>616</y>
     <width>207</width>
     <height>30</height>
@@ -32,7 +32,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>386</x>
+    <x>578</x>
     <y>252</y>
     <width>126</width>
     <height>135</height>
@@ -282,7 +282,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>386</x>
+    <x>578</x>
     <y>403</y>
     <width>216</width>
     <height>135</height>
@@ -541,7 +541,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_100</name>
     <text>FPGA Uptime</text>
-    <x>163</x>
+    <x>355</x>
     <y>544</y>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -559,7 +559,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_71</name>
     <pv_name>$(P){BPM:$(NO)}Sys:Uptime-I</pv_name>
-    <x>268</x>
+    <x>460</x>
     <y>544</y>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -573,7 +573,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_101</name>
     <text>FPGA Version</text>
-    <x>163</x>
+    <x>355</x>
     <y>570</y>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="12.0">
@@ -591,7 +591,7 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_72</name>
     <pv_name>$(P){BPM:$(NO)}Fpga:FwVer-I</pv_name>
-    <x>268</x>
+    <x>460</x>
     <y>570</y>
     <font>
       <font family="Sans" style="REGULAR" size="12.0">
@@ -605,7 +605,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>5</x>
+    <x>197</x>
     <y>252</y>
     <width>145</width>
     <height>307</height>
@@ -1425,7 +1425,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>155</x>
+    <x>347</x>
     <y>252</y>
     <width>220</width>
     <height>282</height>
@@ -2628,7 +2628,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>5</x>
+    <x>197</x>
     <y>40</y>
     <width>430</width>
     <height>207</height>
@@ -4676,7 +4676,7 @@
   <widget type="choice" version="2.0.0">
     <name>Choice Button</name>
     <pv_name>$(P){BPM:$(NO)}Trig:TrigSrc-SP</pv_name>
-    <x>165</x>
+    <x>357</x>
     <y>619</y>
     <width>201</width>
     <height>24</height>
@@ -4696,7 +4696,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_107</name>
     <text>Trigger Source</text>
-    <x>163</x>
+    <x>355</x>
     <y>596</y>
     <width>205</width>
     <font>
@@ -4714,7 +4714,7 @@
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_52</name>
-    <x>162</x>
+    <x>354</x>
     <y>666</y>
     <width>207</width>
     <height>30</height>
@@ -4728,7 +4728,7 @@
   <widget type="choice" version="2.0.0">
     <name>Choice Button_1</name>
     <pv_name>$(P){BPM:$(NO)}CLK:EventSrc-SP</pv_name>
-    <x>165</x>
+    <x>357</x>
     <y>669</y>
     <width>201</width>
     <height>24</height>
@@ -4748,7 +4748,7 @@
   <widget type="label" version="2.0.0">
     <name>Label_108</name>
     <text>Event Source</text>
-    <x>163</x>
+    <x>355</x>
     <y>646</y>
     <width>205</width>
     <font>
@@ -4766,7 +4766,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>386</x>
+    <x>578</x>
     <y>564</y>
     <width>207</width>
     <height>104</height>
@@ -4877,7 +4877,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <x>5</x>
+    <x>197</x>
     <y>564</y>
     <width>145</width>
     <height>181</height>
@@ -5388,5 +5388,1412 @@
       <border_alarm_sensitive>false</border_alarm_sensitive>
       <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
     </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_68</name>
+    <y>124</y>
+    <width>193</width>
+    <height>125</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_69</name>
+    <x>98</x>
+    <y>194</y>
+    <width>91</width>
+    <height>24</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_70</name>
+    <x>98</x>
+    <y>153</y>
+    <width>91</width>
+    <height>38</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_71</name>
+    <x>4</x>
+    <y>153</y>
+    <width>91</width>
+    <height>38</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_1</name>
+    <y>81</y>
+    <width>193</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_72</name>
+      <width>193</width>
+      <height>40</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_130</name>
+      <text>RF Atten</text>
+      <x>5</x>
+      <y>5</y>
+      <width>89</width>
+      <height>30</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_73</name>
+      <x>97</x>
+      <y>4</y>
+      <width>91</width>
+      <height>32</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="Grid" red="128" green="128" blue="128">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="spinner" version="2.0.0">
+      <name>Spinner_2</name>
+      <pv_name>$(P){BPM:$(NO)}Gain:RfAtte-SP</pv_name>
+      <x>99</x>
+      <y>6</y>
+      <width>87</width>
+      <height>28</height>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="20.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <maximum>31.0</maximum>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_2</name>
+    <y>253</y>
+    <width>193</width>
+    <height>617</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="group" version="3.0.0">
+      <name>Group_11</name>
+      <y>268</y>
+      <width>193</width>
+      <height>341</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_74</name>
+        <width>193</width>
+        <height>341</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_14</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Aavg-I</pv_name>
+        <x>31</x>
+        <y>55</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_131</name>
+        <text>B</text>
+        <x>5</x>
+        <y>80</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_132</name>
+        <text>C</text>
+        <x>5</x>
+        <y>105</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_18</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Bavg-I</pv_name>
+        <x>31</x>
+        <y>80</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_19</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Cavg-I</pv_name>
+        <x>31</x>
+        <y>105</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_133</name>
+        <text>D</text>
+        <x>5</x>
+        <y>130</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_20</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Davg-I</pv_name>
+        <x>31</x>
+        <y>130</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_134</name>
+        <text>S</text>
+        <x>5</x>
+        <y>155</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_135</name>
+        <text>X</text>
+        <x>5</x>
+        <y>180</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_21</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Savg-I</pv_name>
+        <x>31</x>
+        <y>155</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_22</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Xavg-I</pv_name>
+        <x>31</x>
+        <y>180</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_31</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Asig-I</pv_name>
+        <x>112</x>
+        <y>55</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_32</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Bsig-I</pv_name>
+        <x>112</x>
+        <y>80</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_33</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Csig-I</pv_name>
+        <x>112</x>
+        <y>105</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_35</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Dsig-I</pv_name>
+        <x>112</x>
+        <y>130</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_36</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Ssig-I</pv_name>
+        <x>112</x>
+        <y>155</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_37</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Xsig-I</pv_name>
+        <x>112</x>
+        <y>180</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_136</name>
+        <text>Wfm Reset</text>
+        <x>5</x>
+        <y>305</y>
+        <width>102</width>
+        <height>30</height>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_137</name>
+        <text>Y</text>
+        <x>5</x>
+        <y>205</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_38</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Yavg-I</pv_name>
+        <x>31</x>
+        <y>205</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_39</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Ysig-I</pv_name>
+        <x>112</x>
+        <y>205</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_40</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Length-I</pv_name>
+        <x>112</x>
+        <y>230</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_46</name>
+        <pv_name>$(P){BPM:$(NO)}SA:Decimate-I</pv_name>
+        <x>112</x>
+        <y>255</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_138</name>
+        <text>Decimation</text>
+        <x>5</x>
+        <y>255</y>
+        <width>102</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_139</name>
+        <text>Data Length</text>
+        <x>5</x>
+        <y>230</y>
+        <width>102</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_73</name>
+        <pv_name>$(P){BPM:$(NO)}SA:A-Wfm.NORD</pv_name>
+        <x>112</x>
+        <y>280</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_140</name>
+        <text>Wfm Length</text>
+        <x>5</x>
+        <y>280</y>
+        <width>102</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="group" version="3.0.0">
+        <name>Group_12</name>
+        <x>111</x>
+        <y>304</y>
+        <width>78</width>
+        <height>32</height>
+        <style>3</style>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <transparent>true</transparent>
+        <widget type="action_button" version="3.0.0">
+          <name>Action Button_19</name>
+          <actions execute_as_one="true">
+            <action type="write_pv">
+              <pv_name>$(P){BPM:$(NO)}SA:Reset-SP</pv_name>
+              <value>1</value>
+              <description>WritePV</description>
+            </action>
+            <action type="write_pv">
+              <pv_name>$(P){BPM:$(NO)}SA:Length-I</pv_name>
+              <value>300</value>
+              <description>WritePV</description>
+            </action>
+            <action type="write_pv">
+              <pv_name>$(P){BPM:$(NO)}SA:Decimate-I</pv_name>
+              <value>1</value>
+              <description>WritePV</description>
+            </action>
+          </actions>
+          <text>RESET</text>
+          <x>3</x>
+          <y>3</y>
+          <width>72</width>
+          <height>26</height>
+          <font>
+            <font family="Liberation Sans" style="REGULAR" size="16.0">
+            </font>
+          </font>
+          <background_color>
+            <color name="Write_Background" red="128" green="255" blue="255">
+            </color>
+          </background_color>
+          <rules>
+            <rule name="New Rule" prop_id="background_color" out_exp="false">
+              <exp bool_exp="pv0==1">
+                <value>
+                  <color red="255" green="217" blue="0">
+                  </color>
+                </value>
+              </exp>
+              <pv_name>$(P){BPM:$(NO)}SA:Reset-SP</pv_name>
+            </rule>
+          </rules>
+          <tooltip>$(actions)</tooltip>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+          <show_confirm_dialog>true</show_confirm_dialog>
+          <confirm_message>Reseting will delete the SA History Buffers.  Continue?</confirm_message>
+        </widget>
+        <widget type="rectangle" version="2.0.0">
+          <name>Rectangle_75</name>
+          <width>78</width>
+          <height>32</height>
+          <line_width>1</line_width>
+          <line_color>
+            <color name="Text" red="0" green="0" blue="0">
+            </color>
+          </line_color>
+          <background_color>
+            <color name="Grid" red="128" green="128" blue="128">
+            </color>
+          </background_color>
+          <transparent>true</transparent>
+        </widget>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_141</name>
+        <text>Average</text>
+        <x>31</x>
+        <y>30</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_142</name>
+        <text>Sigma</text>
+        <x>112</x>
+        <y>30</y>
+        <width>76</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_143</name>
+        <text></text>
+        <x>5</x>
+        <y>30</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_144</name>
+        <text>Waveform Statistics</text>
+        <x>5</x>
+        <y>5</y>
+        <width>183</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_145</name>
+        <text>A</text>
+        <x>5</x>
+        <y>55</y>
+        <width>21</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_13</name>
+      <width>193</width>
+      <height>130</height>
+      <style>3</style>
+      <font>
+        <font family="Sans" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_76</name>
+        <width>193</width>
+        <height>130</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_74</name>
+        <pv_name>$(P){BPM:$(NO)}Cnt:Trig-I</pv_name>
+        <x>88</x>
+        <y>105</y>
+        <font>
+          <font family="Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_146</name>
+        <text>10Hz Trigs</text>
+        <x>5</x>
+        <y>105</y>
+        <width>78</width>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_75</name>
+        <pv_name>$(P){BPM:$(NO)}TS-I</pv_name>
+        <x>58</x>
+        <y>30</y>
+        <width>130</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_147</name>
+        <text>SA 10Hz Timestamp</text>
+        <x>5</x>
+        <y>5</y>
+        <width>183</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_79</name>
+        <pv_name>$(P){BPM:$(NO)}TS:NS-I</pv_name>
+        <x>58</x>
+        <y>55</y>
+        <width>130</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_110</name>
+        <pv_name>$(P){BPM:$(NO)}SA:TrigDate-I</pv_name>
+        <x>5</x>
+        <y>80</y>
+        <width>183</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_148</name>
+        <text>NSec</text>
+        <x>5</x>
+        <y>55</y>
+        <width>48</width>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_149</name>
+        <text>Sec</text>
+        <x>5</x>
+        <y>30</y>
+        <width>48</width>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+    </widget>
+    <widget type="group" version="3.0.0">
+      <name>Group_15</name>
+      <y>134</y>
+      <width>193</width>
+      <height>130</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rectangle_77</name>
+        <width>193</width>
+        <height>130</height>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="Text" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <transparent>true</transparent>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_150</name>
+        <text>S</text>
+        <x>98</x>
+        <y>30</y>
+        <width>20</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_111</name>
+        <pv_name>$(P){BPM:$(NO)}Ampl:Sum-I</pv_name>
+        <x>123</x>
+        <y>30</y>
+        <width>65</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_151</name>
+        <text>X</text>
+        <x>98</x>
+        <y>55</y>
+        <width>20</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_152</name>
+        <text>Y</text>
+        <x>98</x>
+        <y>80</y>
+        <width>20</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_112</name>
+        <pv_name>$(P){BPM:$(NO)}Pos:X-I</pv_name>
+        <x>123</x>
+        <y>55</y>
+        <width>65</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_113</name>
+        <pv_name>$(P){BPM:$(NO)}Pos:Y-I</pv_name>
+        <x>123</x>
+        <y>80</y>
+        <width>65</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>3</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_124</name>
+        <pv_name>$(P){BPM:$(NO)}Ampl:ASA-I</pv_name>
+        <x>30</x>
+        <y>30</y>
+        <width>63</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_153</name>
+        <text>SA (10Hz) Live</text>
+        <x>5</x>
+        <y>5</y>
+        <width>183</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_125</name>
+        <pv_name>$(P){BPM:$(NO)}Ampl:BSA-I</pv_name>
+        <x>30</x>
+        <y>55</y>
+        <width>63</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_126</name>
+        <pv_name>$(P){BPM:$(NO)}Ampl:CSA-I</pv_name>
+        <x>30</x>
+        <y>80</y>
+        <width>63</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_127</name>
+        <pv_name>$(P){BPM:$(NO)}Ampl:DSA-I</pv_name>
+        <x>30</x>
+        <y>105</y>
+        <width>63</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <precision>0</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_154</name>
+        <text>B</text>
+        <x>5</x>
+        <y>55</y>
+        <width>20</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_155</name>
+        <text>C</text>
+        <x>5</x>
+        <y>80</y>
+        <width>20</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_156</name>
+        <text>D</text>
+        <x>5</x>
+        <y>105</y>
+        <width>20</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label_157</name>
+        <text>A</text>
+        <x>5</x>
+        <y>30</y>
+        <width>20</width>
+        <font>
+          <font family="Sans" style="REGULAR" size="12.0">
+          </font>
+        </font>
+        <background_color>
+          <color name="Button_Background" red="210" green="210" blue="210">
+          </color>
+        </background_color>
+        <transparent>false</transparent>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <border_width>1</border_width>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="3.0.0">
+    <name>Group_16</name>
+    <y>37</y>
+    <width>193</width>
+    <height>40</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_78</name>
+      <width>193</width>
+      <height>40</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_158</name>
+      <text></text>
+      <x>5</x>
+      <y>5</y>
+      <width>183</width>
+      <height>30</height>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(P){BPM:$(NO)}Alarm:PLL-I</pv_name>
+      <x>7</x>
+      <y>7</y>
+      <width>179</width>
+      <height>26</height>
+      <off_color>
+        <color red="255" green="180" blue="180">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="180" green="255" blue="180">
+        </color>
+      </on_color>
+      <line_color>
+        <color name="Text" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_20</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+        <value>1</value>
+        <description>WritePV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(P){BPM:$(NO)}SA:Decimate-I</pv_name>
+        <value>1</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>OFF</text>
+    <x>8</x>
+    <y>157</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>
+            <color red="255" green="219" blue="139">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_21</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+        <value>0</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>ON</text>
+    <x>102</x>
+    <y>157</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color red="255" green="219" blue="139">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_159</name>
+    <text>RF Switching</text>
+    <x>5</x>
+    <y>129</y>
+    <width>183</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_160</name>
+    <text>Turn Dly</text>
+    <x>5</x>
+    <y>195</y>
+    <width>89</width>
+    <height>22</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_161</name>
+    <text>Demux Dly</text>
+    <x>5</x>
+    <y>222</y>
+    <width>89</width>
+    <height>22</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_8</name>
+    <pv_name>$(P){BPM:$(NO)}RFSW:TrigDly-SP</pv_name>
+    <x>101</x>
+    <y>196</y>
+    <width>85</width>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_79</name>
+    <x>98</x>
+    <y>221</y>
+    <width>91</width>
+    <height>24</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_9</name>
+    <pv_name>$(P){BPM:$(NO)}RFSW:DeMuxDly-SP</pv_name>
+    <x>101</x>
+    <y>223</y>
+    <width>85</width>
+    <horizontal_alignment>1</horizontal_alignment>
   </widget>
 </display>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-06-18 16:01:23 by diag-->
+<!--Saved on 2025-08-07 13:46:46 by diag-->
 <display version="2.0.0">
   <name>zuTbT</name>
   <width>1200</width>
   <height>900</height>
   <widget type="group" version="3.0.0">
     <name>Group_10</name>
-    <y>270</y>
+    <y>399</y>
     <width>192</width>
     <height>130</height>
     <style>3</style>
@@ -61,7 +61,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_80</name>
-      <pv_name>$(P){BPM:1}EVR:TrigDate-I</pv_name>
+      <pv_name>$(P){BPM:$(NO)}EVR:TrigDate-I</pv_name>
       <x>5</x>
       <y>105</y>
       <width>182</width>
@@ -142,7 +142,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group</name>
-    <y>404</y>
+    <y>533</y>
     <width>192</width>
     <height>231</height>
     <style>3</style>
@@ -530,7 +530,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group_12</name>
-    <y>128</y>
+    <y>257</y>
     <width>192</width>
     <height>138</height>
     <style>3</style>
@@ -728,7 +728,7 @@
       <horizontal_alignment>1</horizontal_alignment>
       <rules>
         <rule name="BGcolor" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0!=pv1">
+          <exp bool_exp="pvInt0!=pvint1">
             <value>
               <color red="255" green="180" blue="180">
               </color>
@@ -2153,7 +2153,7 @@
   </widget>
   <widget type="group" version="3.0.0">
     <name>Group_16</name>
-    <y>639</y>
+    <y>768</y>
     <width>192</width>
     <height>84</height>
     <style>3</style>
@@ -2426,5 +2426,219 @@
     </background_color>
     <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_68</name>
+    <y>128</y>
+    <width>193</width>
+    <height>125</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_69</name>
+    <x>98</x>
+    <y>198</y>
+    <width>91</width>
+    <height>24</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_70</name>
+    <x>98</x>
+    <y>157</y>
+    <width>91</width>
+    <height>38</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_71</name>
+    <x>4</x>
+    <y>157</y>
+    <width>91</width>
+    <height>38</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+        <value>1</value>
+        <description>WritePV</description>
+      </action>
+      <action type="write_pv">
+        <pv_name>$(P){BPM:$(NO)}SA:Decimate-I</pv_name>
+        <value>1</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>OFF</text>
+    <x>8</x>
+    <y>161</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>
+            <color red="255" green="219" blue="139">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_20</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+        <value>0</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>ON</text>
+    <x>102</x>
+    <y>161</y>
+    <width>83</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>
+            <color red="255" green="219" blue="139">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_30</name>
+    <text>RF Switching</text>
+    <x>5</x>
+    <y>133</y>
+    <width>183</width>
+    <font>
+      <font family="Sans" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_34</name>
+    <text>Turn Dly</text>
+    <x>5</x>
+    <y>199</y>
+    <width>89</width>
+    <height>22</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_35</name>
+    <text>Demux Dly</text>
+    <x>5</x>
+    <y>226</y>
+    <width>89</width>
+    <height>22</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(P){BPM:$(NO)}RFSW:TrigDly-SP</pv_name>
+    <x>101</x>
+    <y>200</y>
+    <width>85</width>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_72</name>
+    <x>98</x>
+    <y>225</y>
+    <width>91</width>
+    <height>24</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry_1</name>
+    <pv_name>$(P){BPM:$(NO)}RFSW:DeMuxDly-SP</pv_name>
+    <x>101</x>
+    <y>227</y>
+    <width>85</width>
+    <horizontal_alignment>1</horizontal_alignment>
   </widget>
 </display>
