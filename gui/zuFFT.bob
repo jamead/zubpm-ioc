@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2025-08-07 11:23:37 by diag-->
+<!--Saved on 2025-08-08 08:14:07 by diag-->
 <display version="2.0.0">
   <name>zuFFT</name>
   <height>865</height>
@@ -1495,7 +1495,7 @@
     </widget>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_68</name>
+    <name>Rectangle_73</name>
     <y>129</y>
     <width>193</width>
     <height>125</height>
@@ -1507,7 +1507,7 @@
     <transparent>true</transparent>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_69</name>
+    <name>Rectangle_74</name>
     <x>98</x>
     <y>199</y>
     <width>91</width>
@@ -1520,10 +1520,10 @@
     <transparent>true</transparent>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_70</name>
-    <x>98</x>
+    <name>Rectangle_75</name>
+    <x>68</x>
     <y>158</y>
-    <width>91</width>
+    <width>58</width>
     <height>38</height>
     <line_width>1</line_width>
     <line_color>
@@ -1533,10 +1533,10 @@
     <transparent>true</transparent>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_71</name>
+    <name>Rectangle_76</name>
     <x>4</x>
     <y>158</y>
-    <width>91</width>
+    <width>58</width>
     <height>38</height>
     <line_width>1</line_width>
     <line_color>
@@ -1546,23 +1546,18 @@
     <transparent>true</transparent>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>Action Button_2</name>
+    <name>Action Button_21</name>
     <actions execute_as_one="true">
       <action type="write_pv">
         <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
         <value>1</value>
         <description>WritePV</description>
       </action>
-      <action type="write_pv">
-        <pv_name>$(P){BPM:$(NO)}SA:Decimate-I</pv_name>
-        <value>1</value>
-        <description>WritePV</description>
-      </action>
     </actions>
-    <text>ON</text>
+    <text>X</text>
     <x>8</x>
     <y>162</y>
-    <width>83</width>
+    <width>50</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="16.0">
       </font>
@@ -1586,7 +1581,7 @@
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="action_button" version="3.0.0">
-    <name>Action Button_20</name>
+    <name>Action Button_22</name>
     <actions execute_as_one="true">
       <action type="write_pv">
         <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
@@ -1594,10 +1589,10 @@
         <description>WritePV</description>
       </action>
     </actions>
-    <text>OFF</text>
-    <x>102</x>
+    <text>S</text>
+    <x>72</x>
     <y>162</y>
-    <width>83</width>
+    <width>50</width>
     <font>
       <font family="Liberation Sans" style="REGULAR" size="16.0">
       </font>
@@ -1621,7 +1616,7 @@
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_30</name>
+    <name>Label_36</name>
     <text>RF Switching</text>
     <x>5</x>
     <y>134</y>
@@ -1640,7 +1635,7 @@
     <border_width>1</border_width>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_34</name>
+    <name>Label_37</name>
     <text>Turn Dly</text>
     <x>5</x>
     <y>200</y>
@@ -1660,7 +1655,7 @@
     <border_width>1</border_width>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_35</name>
+    <name>Label_38</name>
     <text>Demux Dly</text>
     <x>5</x>
     <y>227</y>
@@ -1680,7 +1675,7 @@
     <border_width>1</border_width>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>Text Entry</name>
+    <name>Text Entry_2</name>
     <pv_name>$(P){BPM:$(NO)}RFSW:TrigDly-SP</pv_name>
     <x>101</x>
     <y>201</y>
@@ -1688,7 +1683,7 @@
     <horizontal_alignment>1</horizontal_alignment>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_72</name>
+    <name>Rectangle_77</name>
     <x>98</x>
     <y>226</y>
     <width>91</width>
@@ -1701,11 +1696,59 @@
     <transparent>true</transparent>
   </widget>
   <widget type="textentry" version="3.0.0">
-    <name>Text Entry_1</name>
+    <name>Text Entry_3</name>
     <pv_name>$(P){BPM:$(NO)}RFSW:DeMuxDly-SP</pv_name>
     <x>101</x>
     <y>228</y>
     <width>85</width>
     <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_78</name>
+    <x>131</x>
+    <y>158</y>
+    <width>58</width>
+    <height>38</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_23</name>
+    <actions execute_as_one="true">
+      <action type="write_pv">
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+        <value>2</value>
+        <description>WritePV</description>
+      </action>
+    </actions>
+    <text>RF</text>
+    <x>135</x>
+    <y>162</y>
+    <width>50</width>
+    <font>
+      <font family="Liberation Sans" style="REGULAR" size="16.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Write_Background" red="128" green="255" blue="255">
+      </color>
+    </background_color>
+    <rules>
+      <rule name="BGcolor" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0==2">
+          <value>
+            <color red="255" green="219" blue="139">
+            </color>
+          </value>
+        </exp>
+        <pv_name>$(P){BPM:$(NO)}RFSW:Enable-SP</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>
