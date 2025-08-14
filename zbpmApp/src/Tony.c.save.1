@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <stddef.h>
+#include <string.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <stdint.h>
+#include <unistd.h>
+#include <math.h>
+#include <time.h>
+
+#include <aSubRecord.h>
+#include <registryFunction.h>
+#include <epicsExport.h>
+
+#define BUFMAX 60 //115220
+
+static long Tony(aSubRecord *precord) {
+    static float Abuff[BUFMAX],Bbuff[BUFMAX],Cbuff[BUFMAX],Dbuff[BUFMAX];
+    static float ACbuff[BUFMAX],BDbuff[BUFMAX];
+
+    float Awfm[15000],Bwfm[15000],Cwfm[15000],Dwfm[15000];
+    float ACwfm[15000],BDwfm[15000];
+    int i;
+
+    static int topIndx=0,Count=0,PVset=0;
+
+    double A = *(double *)precord->a;
+    double B = *(double *)precord->b;
+    double C = *(double *)precord->c;
+    double D = *(double *)precord->d;
+    double AC = *(double *)precord->e;
+    double BD = *(double *)precord->f;
+    int length = *(int *)precord->g;
+    int decimate = *(int *)precord->h;
+    int reset = *(int *)precord->i;
+
+    printf("%5.3f %5.3f %5.3f %5.3f %5.3f %5.3f\n",A,B,C,D,AC,BD);
+    printf("%d %d %d\n",length,decimate,reset);
+
+    Abuff[topIndx] = (float)A;
+    Bbuff[topIndx] = (float)B;
+    Cbuff[topIndx] = (float)C;
+    Dbuff[topIndx] = (float)D;
+    ACbuff[topIndx] = (float)AC;
+    BDbuff[topIndx] = (float)BD;
+
+    topIndx = topIndx + 1;
+    if(topIndx==BUFMAX) topIndx = 0;
+
+    if(Count<BUFMAX){
+        Count = Count + 1;
+        int endIndx = topIndx - topIndx%decimate;
+        if((length*decimate)>endIndx) length = endIndx/decimate;
+        int startIndx = endIndx - (length-1)*decimate;
+        int wfmCnt=0;
+        for(i=startIndx;i<=endIndx;i=i+decimate){
+            Awfm[wfmCnt] = Abuff[i];
+            Bwfm[wfmCnt] = Bbuff[i];
+            Cwfm[wfmCnt] = Cbuff[i];
+            Dwfm[wfmCnt] = Dbuff[i];
+            ACwfm[wfmCnt] = ACbuff[i];
+            BDwfm[wfmCnt] = BDbuff[i];
+            wfmCnt = wfmCnt + 1;
+        }
+    }else{
+        int endIndx = topIndx - topIndx%decimate;
+        int startIndx = endIndx - (length-1)*decimate;
+        int wfmCnt = 0;
+        if(topIndx<length*decimate){
+            for(i=(BUFMAX+topIndx-length*decimate+1);i<BUFMAX;i=i+decimate){
+                Awfm[wfmCnt] = Abuff[i];
+                Bwfm[wfmCnt] = Bbuff[i];
+                Cwfm[wfmCnt] = Cbuff[i];
+                Dwfm[wfmCnt] = Dbuff[i];
+                ACwfm[wfmCnt] = ACbuff[i];
+                BDwfm[wfmCnt] = BDbuff[i];
+                wfmCnt = wfmCnt + 1;
+            }
+            startIndx = 0;
+        }
+        for(i=startIndx;i<=endIndx;i=i+decimate){
+            Awfm[wfmCnt] = Abuff[i];
+            Bwfm[wfmCnt] = Bbuff[i];
+            Cwfm[wfmCnt] = Cbuff[i];
+            Dwfm[wfmCnt] = Dbuff[i];
+            ACwfm[wfmCnt] = ACbuff[i];
+            BDwfm[wfmCnt] = BDbuff[i];
+            wfmCnt = wfmCnt + 1;
+        }
+    }
+    precord->neva = wfmCnt;
+
+    memcpy((float *)precord->vala,Awfm,wfmCnt*sizeof(float));
+    memcpy((float *)precord->valb,Bwfm,wfmCnt*sizeof(float));
+    memcpy((float *)precord->valc,Cwfm,wfmCnt*sizeof(float));
+    memcpy((float *)precord->vald,Dwfm,wfmCnt*sizeof(float));
+    memcpy((float *)precord->vale,ACwfm,wfmCnt*sizeof(float));
+    memcpy((float *)precord->valf,BDwfm,wfmCnt*sizeof(float));
+
+    return 0;
+}
+epicsRegisterFunction(Tony);

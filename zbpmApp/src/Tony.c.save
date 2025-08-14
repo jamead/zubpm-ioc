@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <aSubRecord.h>
+#include <registryFunction.h>
+#include <epicsExport.h>
+
+static long Tony(aSubRecord *prec) {
+    printf("Hello\n");
+
+
+    return 0;
+}
+epicsRegisterFunction(Tony);
