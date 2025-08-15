@@ -1,0 +1,583 @@
+record(ai, "$(P){BPM:$(NO)}Temp:DfeSense0-I") {
+    field(DESC, "DFE Temp0 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 4")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+
+record(ai, "$(P){BPM:$(NO)}Temp:DfeSense1-I") {
+    field(DESC, "DFE Temp1 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 8")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:DfeSense2-I") {
+    field(DESC, "DFE Temp2 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 12")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+
+record(ai, "$(P){BPM:$(NO)}Temp:DfeSense3-I") {
+    field(DESC, "DFE Temp3 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 16")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:AfeSense0-I") {
+    field(DESC, "AFE Temp0 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 20")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"45")
+    field(LOLO,"-0.5")
+    field(HIGH,"37")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:AfeSense1-I") {
+    field(DESC, "AFE Temp1 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 24")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:FpgaDie-I") {
+    field(DESC, "FPGA Die Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 28")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"10")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:DfeRegSense1-I") {
+    field(DESC, "DFE Regulator Temp1 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 112")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:DfeRegSense2-I") {
+    field(DESC, "DFE Regulator Temp2 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 116")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:DfeRegSense3-I") {
+    field(DESC, "DFE Regulator Temp3 read")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 120")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:PwrMgmt-I") {
+    field(DESC, "LTC2977 Pwr Mgmt Chip Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 280")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:Thermistor:D-I") {
+    field(DESC, "PID Thermistor Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 328")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:Thermistor:A-I") {
+    field(DESC, "PID Thermistor Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 332")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:Thermistor:C-I") {
+    field(DESC, "PID Thermistor Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 336")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:Thermistor:AC-I") {
+    field(DESC, "PID Thermistor Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 340")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:Thermistor:BD-I") {
+    field(DESC, "PID Thermistor Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 344")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(ai, "$(P){BPM:$(NO)}Temp:Thermistor:B-I") {
+    field(DESC, "PID Thermistor Temperature")
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@Rx$(NO) 32 324")
+    field(LINR,"LINEAR")
+    field(PREC,"3")
+    field(SCAN,"I/O Intr")
+    field(EGU,  "C")
+    field(HIHI,"60")
+    field(LOLO,"-0.5")
+    field(HIGH,"50")
+    field(LOW,"10")
+    field(HHSV,"MAJOR")
+    field(HSV,"MINOR")
+    field(LLSV,"INVALID")
+    field(LSV,"MINOR")
+}
+
+record(longout,"$(P){BPM:$(NO)}Temp:Reset-SP"){
+  field(DTYP,"Soft Channel")
+  field(VAL,0)
+  field(UDF,0)
+}
+
+record(longin,"$(P){BPM:$(NO)}Temp:Length-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,30)
+  field(UDF,30)
+}
+
+record(longin,"$(P){BPM:$(NO)}Temp:Decimate-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:A-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:B-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:C-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:D-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:AC-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:BD-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:Time-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:X-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:Y-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"15000")
+  field(FTVL,"FLOAT")
+}
+
+record(ai,"$(P){BPM:$(NO)}Temp:Xavg-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+  field(EGU,"um")
+}
+
+record(ai,"$(P){BPM:$(NO)}Temp:Xsig-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+  field(EGU,"um")
+}
+
+record(ai,"$(P){BPM:$(NO)}Temp:Yavg-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+  field(EGU,"um")
+}
+
+record(ai,"$(P){BPM:$(NO)}Temp:Ysig-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+  field(EGU,"um")
+}
+
+record(ai,"$(P){BPM:$(NO)}Temp:Fit:Slope-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+  field(EGU,"um/C")
+}
+
+record(ai,"$(P){BPM:$(NO)}Temp:Fit:Intercept-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+  field(EGU,"um")
+}
+
+record(ai,"$(P){BPM:$(NO)}Temp:Fit:Correlation-I"){
+  field(DTYP,"Soft Channel")
+  field(VAL,1)
+  field(UDF,1)
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:Fit:Temp-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"101")
+  field(FTVL,"FLOAT")
+}
+
+record(waveform,"$(P){BPM:$(NO)}Temp:Fit:Pos-Wfm"){
+  field(DTYP,"Soft Channel")
+  field(DESC,"History")
+  field(NELM,"101")
+  field(FTVL,"FLOAT")
+}
+
+record(mbbo, "$(P){BPM:$(NO)}Temp:Fit:Sensor-SP"){
+  field(DESC, "Thermistor Selection for Linear Fit")
+  field(ZRST,"A")
+  field(ONST,"B")
+  field(TWST,"C")
+  field(THST,"D")
+  field(FRST,"AC")
+  field(FVST,"BD")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+  field(TWVL,"2")
+  field(THVL,"3")
+  field(FRVL,"4")
+  field(FVVL,"5")
+}
+
+record(mbbo, "$(P){BPM:$(NO)}Temp:Fit:Axis-SP"){
+  field(DESC, "Thermistor Selection for Linear Fit")
+  field(ZRST,"X")
+  field(ONST,"Y")
+  field(ZRVL,"0")
+  field(ONVL,"1")
+}
+
+record(stringout, "$(P){BPM:$(NO)}Temp:TrigDate-I"){
+   field(DTYP,"Soft Channel")
+   field(VAL,"No Clock")
+}
+
+record(aSub,"$(P){BPM:$(NO)}Tony-Sub"){
+    field(SNAM,"Tony")
+    field(SCAN,"1 second")
+    field(PINI, "YES")
+
+    field(FTA,  "DOUBLE")
+    field(NOA,  "1")
+    field(INPA, "$(P){BPM:$(NO)}Temp:Thermistor:A-I")
+    field(FTB,  "DOUBLE")
+    field(NOB,  "1")
+    field(INPB, "$(P){BPM:$(NO)}Temp:Thermistor:B-I")
+    field(FTC,  "DOUBLE")
+    field(NOC,  "1")
+    field(INPC, "$(P){BPM:$(NO)}Temp:Thermistor:C-I")
+    field(FTD,  "DOUBLE")
+    field(NOD,  "1")
+    field(INPD, "$(P){BPM:$(NO)}Temp:Thermistor:D-I")
+    field(FTE,  "DOUBLE")
+    field(NOE,  "1")
+    field(INPE, "$(P){BPM:$(NO)}Temp:Thermistor:AC-I")
+    field(FTF,  "DOUBLE")
+    field(NOF,  "1")
+    field(INPF, "$(P){BPM:$(NO)}Temp:Thermistor:BD-I")
+    field(FTG,  "LONG")
+    field(NOG,  "1")
+    field(INPG, "$(P){BPM:$(NO)}Temp:Length-I")
+    field(FTH,  "LONG")
+    field(NOH,  "1")
+    field(INPH, "$(P){BPM:$(NO)}Temp:Decimate-I")
+    field(FTI,  "LONG")
+    field(NOI,  "1")
+    field(INPI, "$(P){BPM:$(NO)}Temp:Reset-SP")
+    field(FTJ,  "FLOAT")
+    field(NOJ,  "1")
+    field(INPJ, "$(P){BPM:$(NO)}Pos:X-I")
+    field(FTK,  "FLOAT")
+    field(NOK,  "1")
+    field(INPK, "$(P){BPM:$(NO)}Pos:Y-I")
+    field(FTL,  "LONG")
+    field(NOL,  "1")
+    field(INPL, "$(P){BPM:$(NO)}Temp:Fit:Sensor-SP")
+    field(FTM,  "LONG")
+    field(NOM,  "1")
+    field(INPM, "$(P){BPM:$(NO)}Temp:Fit:Axis-SP")
+
+
+    field(FTVA,  "FLOAT")
+    field(NOVA,  "15000")
+    field(OUTA, "$(P){BPM:$(NO)}Temp:A-Wfm PP")
+    field(FTVB,  "FLOAT")
+    field(NOVB,  "15000")
+    field(OUTB, "$(P){BPM:$(NO)}Temp:B-Wfm PP")
+    field(FTVC,  "FLOAT")
+    field(NOVC,  "15000")
+    field(OUTC, "$(P){BPM:$(NO)}Temp:C-Wfm PP")
+    field(FTVD,  "FLOAT")
+    field(NOVD,  "15000")
+    field(OUTD, "$(P){BPM:$(NO)}Temp:D-Wfm PP")
+    field(FTVE,  "FLOAT")
+    field(NOVE,  "15000")
+    field(OUTE, "$(P){BPM:$(NO)}Temp:AC-Wfm PP")
+    field(FTVF,  "FLOAT")
+    field(NOVF,  "15000")
+    field(OUTF, "$(P){BPM:$(NO)}Temp:BD-Wfm PP")
+    field(FTVG,  "FLOAT")
+    field(NOVG,  "15000")
+    field(OUTG, "$(P){BPM:$(NO)}Temp:Time-Wfm PP")
+    field(FTVH,  "FLOAT")
+    field(NOVH,  "15000")
+    field(OUTH, "$(P){BPM:$(NO)}Temp:X-Wfm PP")
+    field(FTVI,  "FLOAT")
+    field(NOVI,  "15000")
+    field(OUTI, "$(P){BPM:$(NO)}Temp:Y-Wfm PP")
+    field(FTVJ,  "FLOAT")
+    field(NOVJ,  "1")
+    field(OUTJ, "$(P){BPM:$(NO)}Temp:Xavg-I PP")
+    field(FTVK,  "FLOAT")
+    field(NOVK,  "1")
+    field(OUTK, "$(P){BPM:$(NO)}Temp:Xsig-I PP")
+    field(FTVL,  "FLOAT")
+    field(NOVL,  "1")
+    field(OUTL, "$(P){BPM:$(NO)}Temp:Yavg-I PP")
+    field(FTVM,  "FLOAT")
+    field(NOVM,  "1")
+    field(OUTM, "$(P){BPM:$(NO)}Temp:Ysig-I PP")
+    field(FTVN,  "FLOAT")
+    field(NOVN,  "1")
+    field(OUTN, "$(P){BPM:$(NO)}Temp:Fit:Slope-I PP")
+    field(FTVO,  "FLOAT")
+    field(NOVO,  "1")
+    field(OUTO, "$(P){BPM:$(NO)}Temp:Fit:Intercept-I PP")
+    field(FTVP,  "FLOAT")
+    field(NOVP,  "1")
+    field(OUTP, "$(P){BPM:$(NO)}Temp:Fit:Correlation-I PP")
+    field(FTVQ,  "FLOAT")
+    field(NOVQ,  "101")
+    field(OUTQ, "$(P){BPM:$(NO)}Temp:Fit:Temp-Wfm PP")
+    field(FTVR,  "FLOAT")
+    field(NOVR,  "101")
+    field(OUTR, "$(P){BPM:$(NO)}Temp:Fit:Pos-Wfm PP")
+}
+
+
