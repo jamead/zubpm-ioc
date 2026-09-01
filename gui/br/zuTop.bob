@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>zuTop</name>
+  <width>1250</width>
+  <height>800</height>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="group" version="3.0.0">
+    <name>Group</name>
+    <x>48</x>
+    <y>24</y>
+    <width>162</width>
+    <height>44</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <width>162</width>
+      <height>44</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions>
+        <action type="open_display">
+          <description>Open Display</description>
+          <file>zuSA.bob</file>
+          <macros>
+            <P>lab</P>
+            <NO>1</NO>
+          </macros>
+          <target>window</target>
+        </action>
+      </actions>
+      <text>Start ZuBPM</text>
+      <x>1</x>
+      <y>1</y>
+      <width>160</width>
+      <height>41</height>
+      <font>
+        <font family="Segoe UI" style="REGULAR" size="17.821782178217823">
+        </font>
+      </font>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_2</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>zuSA.bob</file>
+        <macros>
+          <P>C28dev</P>
+          <NO>1</NO>
+        </macros>
+        <target>window</target>
+      </action>
+    </actions>
+    <text>C28 ZBPM1</text>
+    <x>60</x>
+    <y>114</y>
+    <width>234</width>
+    <height>41</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="17.821782178217823">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="open_display">
+        <description>Open Display</description>
+        <file>zuSA.bob</file>
+        <macros>
+          <P>C28dev</P>
+          <NO>2</NO>
+        </macros>
+        <target>window</target>
+      </action>
+    </actions>
+    <text>C28 ZBPM2</text>
+    <x>60</x>
+    <y>168</y>
+    <width>234</width>
+    <height>41</height>
+    <font>
+      <font family="Segoe UI" style="REGULAR" size="17.821782178217823">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

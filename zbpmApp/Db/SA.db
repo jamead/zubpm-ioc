@@ -40,12 +40,12 @@ record(ai, "$(P){BPM:$(NO)}Ampl:ASA-I") {
     field(DTYP, "PSC Reg")
     field(INP , "@psc$(NO) 31 12")
     field(SCAN, "I/O Intr")
-    field(ESLO, "0.00195")
-    field(HOPR, "0.8")
-    field(PREC, "0")
-    field(LINR, "LINEAR")
-    field(ADEL , "-1")
-    field(MDEL , "-1")
+    #field(ESLO, "0.00195")
+    #ield(HOPR, "0.8")
+    #field(PREC, "0")
+    #field(LINR, "LINEAR")
+    #field(ADEL , "-1")
+    #field(MDEL , "-1")
 }
 
 record(ai, "$(P){BPM:$(NO)}Ampl:BSA-I") {
@@ -53,12 +53,12 @@ record(ai, "$(P){BPM:$(NO)}Ampl:BSA-I") {
     field(DTYP, "PSC Reg")
     field(INP , "@psc$(NO) 31 16")
     field(SCAN, "I/O Intr")
-    field(ESLO, "0.00195")
-    field(HOPR, "0.8")
-    field(PREC, "0")
-    field(LINR,"LINEAR")
-    field(ADEL , "-1")
-    field(MDEL , "-1")
+    #field(ESLO, "0.00195")
+    #field(HOPR, "0.8")
+    #field(PREC, "0")
+    #field(LINR,"LINEAR")
+    #field(ADEL , "-1")
+    #field(MDEL , "-1")
 }
 
 
@@ -67,12 +67,12 @@ record(ai, "$(P){BPM:$(NO)}Ampl:CSA-I") {
     field(DTYP, "PSC Reg")
     field(INP , "@psc$(NO) 31 20")
     field(SCAN, "I/O Intr")
-    field(ESLO, "0.00195")
-    field(HOPR, "0.8")
-    field(PREC, "0")
-    field(LINR,"LINEAR")
-    field(ADEL , "-1")
-    field(MDEL , "-1")
+    #field(ESLO, "0.00195")
+    #field(HOPR, "0.8")
+    #field(PREC, "0")
+    #field(LINR,"LINEAR")
+    #field(ADEL , "-1")
+    #field(MDEL , "-1")
 }
 
 record(ai, "$(P){BPM:$(NO)}Ampl:DSA-I") {
@@ -80,22 +80,21 @@ record(ai, "$(P){BPM:$(NO)}Ampl:DSA-I") {
     field(DTYP, "PSC Reg")
     field(INP , "@psc$(NO) 31 24")
     field(SCAN, "I/O Intr")
-#    field(ESLO, "0.0000000004656612873077392578125")
-    field(ESLO, "0.00195")
-    field(HOPR, "0.8")
-    field(PREC, "0")
-    field(LINR,"LINEAR")
-    field(ADEL , "-1")
-    field(MDEL , "-1")
+    #field(ESLO, "0.00195")
+    #field(HOPR, "0.8")
+    #field(PREC, "0")
+    #field(LINR,"LINEAR")
+    #field(ADEL , "-1")
+    #field(MDEL , "-1")
 }
 
 record(ai, "$(P){BPM:$(NO)}Ampl:Sum-I") {
     field(DESC,"10 Hz A+B+C+D Sum")
     field(DTYP, "PSC Reg")
     field(INP , "@psc$(NO) 31 28")
-    field(LINR,"LINEAR")
-    field(ESLO,"0.00187")
-    field(PREC,"6")
+    #field(LINR,"LINEAR")
+    #field(ESLO,"0.00187")
+    #field(PREC,"6")
     field(SCAN,"I/O Intr")
 }
 

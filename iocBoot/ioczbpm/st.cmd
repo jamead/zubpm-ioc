@@ -22,7 +22,9 @@ dbLoadDatabase "../../dbd/zbpm.dbd"
 zbpm_registerRecordDeviceDriver(pdbbase) 
 
 # BPM IP address
-epicsEnvSet("ZBPM_IP", "10.0.142.186");  #4030
+#epicsEnvSet("ZBPM_IP", "10.0.143.153");  #4030
+epicsEnvSet("ZBPM_IP", "10.0.142.104");  #4030
+
 
 ## Load record instances
 dbLoadRecords("../../db/zubpm.db", "P=$(IOCNAME), NO=1, ADC_LIVE_WFM_LEN=$(ALIVELEN), ADC_WFM_LEN=$(ALEN), TBT_LIVE_WFM_LEN=$(TLIVELEN), TBT_WFM_LEN=$(TLEN), SAVG_N=100, SAVG_NSAM=100")
@@ -40,7 +42,7 @@ dbLoadRecords("../../db/SA.db", "P=$(IOCNAME), NO=1")
 dbLoadRecords("../../db/Power.db", "P=$(IOCNAME), NO=1")
 dbLoadRecords("../../db/Temp.db", "P=$(IOCNAME), NO=1")
 dbLoadRecords("../../db/FFT.db", "P=$(IOCNAME), NO=1")
-#dbLoadRecords("../../db/lstats.db", "P=$(IOCNAME), NO=1")
+dbLoadRecords("../../db/lstats.db", "P=$(IOCNAME), NO=1")
 
 #####################################################
 var(PSCDebug, 5)  #5 full debug
